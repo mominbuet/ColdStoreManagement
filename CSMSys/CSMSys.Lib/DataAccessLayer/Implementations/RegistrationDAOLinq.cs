@@ -150,6 +150,35 @@ namespace CSMSys.Lib.DataAccessLayer.Implementations
                 _Logger.Error(ex);
                 return null;
             }
+
+        }
+        public IList<SRVRegistration> SearchRegByPartyID(int partyid)
+        {
+            try
+            {
+                string whereClause = string.Empty;
+                string queryTable = "SRVRegistration";
+
+                DataContext dc = new DataContext(ConfigurationManager.ConnectionStrings["CSMSysConnection"].ConnectionString);
+
+                string strSQL = "SELECT * FROM " + queryTable;
+
+                if ((partyid != 0))
+                {
+                    whereClause += " WHERE partyID = '" + partyid + "'  ;";
+                }
+
+
+
+                strSQL += whereClause;
+
+                return dc.ExecuteQuery<SRVRegistration>(@strSQL).ToList();
+            }
+            catch (Exception ex)
+            {
+                _Logger.Error(ex);
+                return null;
+            }
         }
     }
 }

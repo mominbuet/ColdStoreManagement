@@ -10,6 +10,7 @@ namespace CSMSys.Lib.DataAccessLayer.Interfaces
     {
         long getNextSerialNo();
         IList<INVStockSerial> SearchSerialByNo(string serialNo);
+        IList<INVStockSerial> SearchSerialByParty(int partyid);
         IList<INVStockSerial> SearchSerial(string serialNo, float bag);
         long GetSumByParty(string sql);
     }

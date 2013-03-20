@@ -12,5 +12,6 @@ namespace CSMSys.Lib.DataAccessLayer.Interfaces
         SRVRegistration SearchSRVBySerialParty(string serialNo, int partyid);
         IList<SRVRegistration> SearchRegistration(string serialNo, float bag);
         IList<SRVRegistration> SearchRegForTotalLoan(int partyid, string requisitioned);
+        IList<SRVRegistration> SearchRegByPartyID(int partyid);
     }
 }

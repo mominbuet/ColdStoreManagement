@@ -17,6 +17,7 @@ using CSMSys.Lib.Manager.INV;
 using CSMSys.Lib.AccountingDataAccess;
 using CSMSys.Lib.AccountingUtility;
 using CSMSys.Lib.AccountingEntity;
+using CSMSys.Lib.DataAccessLayer.Implementations;
 
 namespace CSMSys.Web.Controls.INV
 {
@@ -146,14 +147,14 @@ namespace CSMSys.Web.Controls.INV
                 if ((UIMode == UIMODE.NEW) || (UIMode == UIMODE.EDIT))
                 {
                     if (!checkValidity()) return;
-
+                    updateStock();
                     SaveLedger();
                     SaveParty();
                 }
                 ScriptManager.RegisterStartupScript(this, GetType(), "onload", "onSuccess();", true);
                 MultiViewParty.ActiveViewIndex = 1;
             }
-            catch
+            catch(Exception ex)
             {
                 ScriptManager.RegisterStartupScript(this, GetType(), "onload", "onError();", true);
                 MultiViewParty.ActiveViewIndex = 2;
@@ -466,6 +467,31 @@ namespace CSMSys.Web.Controls.INV
         #endregion
 
         #region Methods For Save
+        private void updateStock()
+        {
+            if (PartyID != 0)
+            {
+                IList<INVStockSerial> invss = new SerialDAOLinq().SearchSerialByParty(PartyID);
+                foreach (INVStockSerial invs in invss)
+                {
+                    INVStockSerial tempinvss = new INVStockSerial();
+                    tempinvss.Serial = invs.Serial;
+                    tempinvss.SerialDate = invs.SerialDate;
+                    tempinvss.SerialID = invs.SerialID;
+                    tempinvss.Bags = invs.Bags;
+                    tempinvss.SerialNo = invs.SerialNo;
+                    tempinvss.PartyID = invs.PartyID;
+                    tempinvss.Remarks = invs.Remarks;
+                    tempinvss.CreatedBy = invs.CreatedBy;
+                    tempinvss.CreatedDate = invs.CreatedDate;
+
+                    tempinvss.PartyCode = txtCode.Text;
+                    tempinvss.ModifiedBy = WebCommonUtility.GetCSMSysUserKey();
+                    tempinvss.ModifiedDate = DateTime.Now;
+                    new SerialDAOLinq().Edit(tempinvss);
+                }
+            }
+        }
         private void SaveParty()
         {
             INVParty ip = new INVParty();

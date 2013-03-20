@@ -75,6 +75,32 @@ namespace CSMSys.Lib.DataAccessLayer.Implementations
                 return null;
             }
         }
+        public IList<INVStockSerial> SearchSerialByParty(int partyid)
+        {
+            try
+            {
+                string whereClause = string.Empty;
+                string queryTable = "INVStockSerial";
+
+                DataContext dc = new DataContext(ConfigurationManager.ConnectionStrings["CSMSysConnection"].ConnectionString);
+
+                string strSQL = "SELECT * FROM " + queryTable;
+
+                if (partyid!=0)
+                {
+                    whereClause += " WHERE partyid = '" + partyid + "' ";
+                }
+
+                strSQL += whereClause;
+
+                return dc.ExecuteQuery<INVStockSerial>(@strSQL).ToList();
+            }
+            catch (Exception ex)
+            {
+                _Logger.Error(ex);
+                return null;
+            }
+        }
         public long GetSumByParty(string sql)
         {
             try

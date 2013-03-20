@@ -37,11 +37,11 @@ CodeBehind="PartySetup.aspx.cs" Inherits="CSMSys.Web.Pages.INV.PartySetup" %>
         <table width="100%" border="0" cellpadding="2" cellspacing="4">
 			<tbody>
 			<tr>
-                <td align="left" style="width:47%;">
+                <td align="left" style="width:20%;">
                     <h2>
                         <asp:Label ID="lblcustsetup" runat="server" Text="Customer Setup"></asp:Label></h2>
                 </td>
-                <td align="left" valign="bottom" style="width:30%;">
+                <td align="left" valign="bottom" style="width:20%;">
                     For Agents Only :<asp:CheckBox ID="chkagents" runat="server" AutoPostBack="true" OnCheckedChanged="chkAgentsChanged" />
                 </td>
                 <td align="right" valign="bottom" style="width:44%;">
@@ -155,8 +155,8 @@ CodeBehind="PartySetup.aspx.cs" Inherits="CSMSys.Web.Pages.INV.PartySetup" %>
                             <asp:SqlDataSource ID="dsParty" runat="server" ConnectionString="<%$ ConnectionStrings:CSMSysConnection %>" 
                                 SelectCommand="SELECT ROW_NUMBER() OVER (ORDER BY ip.PartyID) As SlNo, ip.PartyID, ip.PartyType, ip.PartyCode,ip.bagcount, ip.PartyName, ip.FatherName, ip.ContactNo, ip.AreaVillageName, ip.AreaPOName, au.UpazilaPSName, ad.DistrictName, ip.Tel, ip.Cell, ip.Email 
                                                 FROM INVParty AS ip INNER JOIN ADMDistrict AS ad ON ip.DistrictID = ad.DistrictID INNER JOIN
-                                                        ADMUpazilaPS AS au ON ip.UpazilaPSID = au.UpazilaPSID order by ip.partycode" 
-                                                        FilterExpression="PartyName LIKE '%{0}%' OR PartyCode LIKE '{1}%'  OR FatherName LIKE '{2}%'  OR AreaVillageName LIKE '{3}%'">
+                                                        ADMUpazilaPS AS au ON ip.UpazilaPSID = au.UpazilaPSID order by ip.partycode"
+                                FilterExpression="PartyName LIKE '%{0}%' OR PartyCode LIKE '{1}%'  OR FatherName LIKE '{2}%'  OR AreaVillageName LIKE '{3}%'">
                                 <FilterParameters>
                                     <asp:ControlParameter Name="PartyName" ControlID="txtSearch" PropertyName="Text" />
                                     <asp:ControlParameter Name="PartyCode" ControlID="txtSearch" PropertyName="Text" />

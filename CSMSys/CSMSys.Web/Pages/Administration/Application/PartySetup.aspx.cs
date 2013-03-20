@@ -32,6 +32,11 @@ namespace CSMSys.Web.Pages.INV
                 //rm = new ResourceManager("Resources.Strings",
                 //         System.Reflection.Assembly.Load("App_GlobalResources"));
                 //ci = Thread.CurrentThread.CurrentCulture;
+//                grvParty.DataSourceID = dsParty.ID.ToString();
+
+//                dsParty.SelectCommand = @"SELECT ROW_NUMBER() OVER (ORDER BY ip.PartyID) As SlNo, ip.PartyID, ip.PartyType, ip.PartyCode,ip.bagcount, ip.PartyName, ip.FatherName, ip.ContactNo, ip.AreaVillageName, ip.AreaPOName, au.UpazilaPSName, ad.DistrictName, ip.Tel, ip.Cell, ip.Email 
+//                                                FROM INVParty AS ip INNER JOIN ADMDistrict AS ad ON ip.DistrictID = ad.DistrictID INNER JOIN
+//                                                        ADMUpazilaPS AS au ON ip.UpazilaPSID = au.UpazilaPSID order by ip.partycode";
                 grvParty.DataBind();
             }
             //else
@@ -55,6 +60,9 @@ namespace CSMSys.Web.Pages.INV
         }
         protected void chkAgentsChanged(object sender, EventArgs e)
         {
+            //grvParty.DataSource = null;
+            //grvParty.DataBind(); grvParty.DataSourceID = dsParty.ID.ToString();
+
 
             dsParty.SelectCommand = (chkagents.Checked == true) ? @"SELECT ROW_NUMBER() OVER (ORDER BY ip.PartyID) As SlNo, ip.PartyID, ip.PartyType, ip.PartyCode,ip.bagcount, ip.PartyName, ip.FatherName, ip.ContactNo, ip.AreaVillageName, ip.AreaPOName, au.UpazilaPSName, ad.DistrictName, ip.Tel, ip.Cell, ip.Email 
                                                 FROM INVParty AS ip INNER JOIN ADMDistrict AS ad ON ip.DistrictID = ad.DistrictID INNER JOIN
@@ -62,6 +70,7 @@ namespace CSMSys.Web.Pages.INV
                 : @"SELECT ROW_NUMBER() OVER (ORDER BY ip.PartyID) As SlNo, ip.PartyID, ip.PartyType, ip.PartyCode,ip.bagcount, ip.PartyName, ip.FatherName, ip.ContactNo, ip.AreaVillageName, ip.AreaPOName, au.UpazilaPSName, ad.DistrictName, ip.Tel, ip.Cell, ip.Email 
                                                 FROM INVParty AS ip INNER JOIN ADMDistrict AS ad ON ip.DistrictID = ad.DistrictID INNER JOIN
                                                         ADMUpazilaPS AS au ON ip.UpazilaPSID = au.UpazilaPSID order by ip.partycode";
+            grvParty.AllowPaging = !chkagents.Checked;
             grvParty.DataBind();
         }
         #region Methods
