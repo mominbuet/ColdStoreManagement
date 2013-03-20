@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3115DF51-E38B-42A5-B9DC-01483E615707}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSMSys.Lib</RootNamespace>
+    <AssemblyName>CSMSys.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AMMS\Source\Application\AMMS.Lib\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountingDataAccess\BusinessSubTypeDA.cs" />
+    <Compile Include="AccountingDataAccess\BusinessTypeDA.cs" />
+    <Compile Include="AccountingDataAccess\DaAccount.cs" />
+    <Compile Include="AccountingDataAccess\DaBillAccount.cs" />
+    <Compile Include="AccountingDataAccess\DaBills.cs" />
+    <Compile Include="AccountingDataAccess\DaBranch.cs" />
+    <Compile Include="AccountingDataAccess\DAChartsOfItem.cs" />
+    <Compile Include="AccountingDataAccess\Dacolors.cs" />
+    <Compile Include="AccountingDataAccess\DaCommercialDocuments.cs" />
+    <Compile Include="AccountingDataAccess\DaCompany.cs" />
+    <Compile Include="AccountingDataAccess\DaCompanySettings.cs" />
+    <Compile Include="AccountingDataAccess\DaCountry.cs" />
+    <Compile Include="AccountingDataAccess\DaCounts.cs" />
+    <Compile Include="AccountingDataAccess\DaCurrency.cs" />
+    <Compile Include="AccountingDataAccess\Dadepartment.cs" />
+    <Compile Include="AccountingDataAccess\DaExportBill.cs" />
+    <Compile Include="AccountingDataAccess\DaFactory.cs" />
+    <Compile Include="AccountingDataAccess\DaFiscalYear.cs" />
+    <Compile Include="AccountingDataAccess\DAImport_Bill_LCAdjust.cs" />
+    <Compile Include="AccountingDataAccess\DaInventoryRequisition.cs" />
+    <Compile Include="AccountingDataAccess\DaLC.cs" />
+    <Compile Include="AccountingDataAccess\DaLedger.cs" />
+    <Compile Include="AccountingDataAccess\DaLedgerType.cs" />
+    <Compile Include="AccountingDataAccess\DaLoan.cs" />
+    <Compile Include="AccountingDataAccess\DaLogIn.cs" />
+    <Compile Include="AccountingDataAccess\DaOpeningStock.cs" />
+    <Compile Include="AccountingDataAccess\DaOrder.cs" />
+    <Compile Include="AccountingDataAccess\DaPI.cs" />
+    <Compile Include="AccountingDataAccess\DaPriceList.cs" />
+    <Compile Include="AccountingDataAccess\DaPurchaseInvoice.cs" />
+    <Compile Include="AccountingDataAccess\DaPurchaseReturn.cs" />
+    <Compile Include="AccountingDataAccess\DaReportPrivilege.cs" />
+    <Compile Include="AccountingDataAccess\DaSalesInvoice.cs" />
+    <Compile Include="AccountingDataAccess\DaSalesReturn.cs" />
+    <Compile Include="AccountingDataAccess\DaSection.cs" />
+    <Compile Include="AccountingDataAccess\DaShade.cs" />
+    <Compile Include="AccountingDataAccess\DaSizes.cs" />
+    <Compile Include="AccountingDataAccess\DaStockInOut.cs" />
+    <Compile Include="AccountingDataAccess\DaStockInOutType.cs" />
+    <Compile Include="AccountingDataAccess\DaTeam.cs" />
+    <Compile Include="AccountingDataAccess\DaTransaction.cs" />
+    <Compile Include="AccountingDataAccess\DaTransMethod.cs" />
+    <Compile Include="AccountingDataAccess\DaUnits.cs" />
+    <Compile Include="AccountingDataAccess\DaUser.cs" />
+    <Compile Include="AccountingDataAccess\DaUserPrivilege.cs" />
+    <Compile Include="AccountingDataAccess\DaVoucherType.cs" />
+    <Compile Include="AccountingDataAccess\DesignationDA.cs" />
+    <Compile Include="AccountingEntity\Accounts.cs" />
+    <Compile Include="AccountingEntity\BaseObject.cs" />
+    <Compile Include="AccountingEntity\BillAccount.cs" />
+    <Compile Include="AccountingEntity\BillAdjust.cs" />
+    <Compile Include="AccountingEntity\Bills.cs" />
+    <Compile Include="AccountingEntity\Branch.cs" />
+    <Compile Include="AccountingEntity\BusinessSubType.cs" />
+    <Compile Include="AccountingEntity\BusinessType.cs" />
+    <Compile Include="AccountingEntity\ChartsOfItem.cs" />
+    <Compile Include="AccountingEntity\Colors.cs" />
+    <Compile Include="AccountingEntity\CommercialDocuments.cs" />
+    <Compile Include="AccountingEntity\Company.cs" />
+    <Compile Include="AccountingEntity\CompanySettings.cs" />
+    <Compile Include="AccountingEntity\Country.cs" />
+    <Compile Include="AccountingEntity\Counts.cs" />
+    <Compile Include="AccountingEntity\Currency.cs" />
+    <Compile Include="AccountingEntity\Department.cs" />
+    <Compile Include="AccountingEntity\Designation.cs" />
+    <Compile Include="AccountingEntity\ExportBill.cs" />
+    <Compile Include="AccountingEntity\ExportBillInvoices.cs" />
+    <Compile Include="AccountingEntity\Factory.cs" />
+    <Compile Include="AccountingEntity\FiscalYear.cs" />
+    <Compile Include="AccountingEntity\ImportBill.cs" />
+    <Compile Include="AccountingEntity\ImportBillPayment.cs" />
+    <Compile Include="AccountingEntity\Import_Bill_LCAdjust.cs" />
+    <Compile Include="AccountingEntity\ItemGroup.cs" />
+    <Compile Include="AccountingEntity\LCAcceptance.cs" />
+    <Compile Include="AccountingEntity\LC_Detail.cs" />
+    <Compile Include="AccountingEntity\LC_Master.cs" />
+    <Compile Include="AccountingEntity\Ledgers.cs" />
+    <Compile Include="AccountingEntity\LedgerType.cs" />
+    <Compile Include="AccountingEntity\Loan.cs" />
+    <Compile Include="AccountingEntity\LoanAdjust.cs" />
+    <Compile Include="AccountingEntity\ModuleDictionary.cs" />
+    <Compile Include="AccountingEntity\OpeningStock.cs" />
+    <Compile Include="AccountingEntity\Order_Details.cs" />
+    <Compile Include="AccountingEntity\Order_Master.cs" />
+    <Compile Include="AccountingEntity\PI_Details.cs" />
+    <Compile Include="AccountingEntity\PI_Master.cs" />
+    <Compile Include="AccountingEntity\PI_Print_Setting.cs" />
+    <Compile Include="AccountingEntity\PI_Print_Settings.cs" />
+    <Compile Include="AccountingEntity\PriceList.cs" />
+    <Compile Include="AccountingEntity\PurchaseReturn.cs" />
+    <Compile Include="AccountingEntity\PurchaseReturnDetails.cs" />
+    <Compile Include="AccountingEntity\Purchases_Invoice.cs" />
+    <Compile Include="AccountingEntity\Purchases_Invoice_DTL.cs" />
+    <Compile Include="AccountingEntity\Report.cs" />
+    <Compile Include="AccountingEntity\ReqDetail.cs" />
+    <Compile Include="AccountingEntity\ReqMaster.cs" />
+    <Compile Include="AccountingEntity\RolePrivilege.cs" />
+    <Compile Include="AccountingEntity\RoleReportPrivilege.cs" />
+    <Compile Include="AccountingEntity\SalesReturn.cs" />
+    <Compile Include="AccountingEntity\SalesReturnDetail.cs" />
+    <Compile Include="AccountingEntity\Sales_Invoice.cs" />
+    <Compile Include="AccountingEntity\Sales_Invoice_Detail.cs" />
+    <Compile Include="AccountingEntity\Section.cs" />
+    <Compile Include="AccountingEntity\Shade.cs" />
+    <Compile Include="AccountingEntity\Sizes.cs" />
+    <Compile Include="AccountingEntity\Stock_InOut_Detail.cs" />
+    <Compile Include="AccountingEntity\Stock_InOut_Master.cs" />
+    <Compile Include="AccountingEntity\StoreInOutType.cs" />
+    <Compile Include="AccountingEntity\TeamDetail.cs" />
+    <Compile Include="AccountingEntity\TeamMaster.cs" />
+    <Compile Include="AccountingEntity\TransactionDetail.cs" />
+    <Compile Include="AccountingEntity\TransactionMaster.cs" />
+    <Compile Include="AccountingEntity\UnderLC.cs" />
+    <Compile Include="AccountingEntity\Units.cs" />
+    <Compile Include="AccountingEntity\UserPrivilege.cs" />
+    <Compile Include="AccountingEntity\UserReportPrivilege.cs" />
+    <Compile Include="AccountingEntity\Users.cs" />
+    <Compile Include="AccountingUtility\Authentication.cs" />
+    <Compile Include="AccountingUtility\BaseObject.cs" />
+    <Compile Include="AccountingUtility\ConnectionHelper.cs" />
+    <Compile Include="AccountingUtility\CrystalReportHelper.cs" />
+    <Compile Include="AccountingUtility\ExceptionAgent.cs" />
+    <Compile Include="AccountingUtility\GlobalFunctions.cs" />
+    <Compile Include="AccountingUtility\LocalConnection.cs" />
+    <Compile Include="AccountingUtility\NullManager.cs" />
+    <Compile Include="App_Code\GridViewGroup.cs" />
+    <Compile Include="App_Code\GridViewGroupList.cs" />
+    <Compile Include="App_Code\GridViewHelper.cs" />
+    <Compile Include="App_Code\GridViewSummary.cs" />
+    <Compile Include="App_Code\GridViewSummaryList.cs" />
+    <Compile Include="BusinessObjects\BOCountry.cs" />
+    <Compile Include="BusinessObjects\StockSerialNo.cs" />
+    <Compile Include="BusinessObjects\XMLSiteMapParserObject.cs" />
+    <Compile Include="DataAccessLayer\Implementations\AreaPODAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\BagDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\BagLoanDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\BaseDAORepository.cs" />
+    <Compile Include="DataAccessLayer\Implementations\BookIssueDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\CountryDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\DeliveryDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\DistrictDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\DivisionDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\ItemDetailsDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\ItemDetailShadDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\ItemTypeDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\LoadingDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\LoanCollectionDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\LoanDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\PartyDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\RegistrationDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\RelocateDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\ReportDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\SerialDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Implementations\UpazilaPSDAOLinq.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IBagLoanDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IBookIssueDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IAreaPODAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IBagDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\ICountryDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IDeliveryDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IDistrictDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IDivisionDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IItemDetailsDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IItemDetailShadDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IItemTypeDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\ILoadingDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\ILoanCollectionDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\ILoanDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IPartyDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IRegistrationDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IRelocateDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IReportDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IRepository.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\ISerialDAO.cs" />
+    <Compile Include="DataAccessLayer\Interfaces\IUpazilaPSDAO.cs" />
+    <Compile Include="Manager\Administration\Application\AreaPOManager.cs" />
+    <Compile Include="Manager\Administration\Application\CountryManager.cs" />
+    <Compile Include="Manager\Administration\Application\DistrictManager.cs" />
+    <Compile Include="Manager\Administration\Application\DivisionManager.cs" />
+    <Compile Include="Manager\Administration\Application\UpazilaPSManager.cs" />
+    <Compile Include="Manager\INV\LoadManager.cs" />
+    <Compile Include="Manager\INV\PartyManager.cs" />
+    <Compile Include="Manager\INV\RelocateManager.cs" />
+    <Compile Include="Manager\INV\ReportManager.cs" />
+    <Compile Include="Manager\INV\SerialManager.cs" />
+    <Compile Include="Manager\RptShad\LoanRequisition.cs" />
+    <Compile Include="Manager\SRV\BagLoanManager.cs" />
+    <Compile Include="Manager\SRV\BagManager.cs" />
+    <Compile Include="Manager\SRV\BookIssueManager.cs" />
+    <Compile Include="Manager\SRV\DManager.cs" />
+    <Compile Include="Manager\SRV\ItemDetailsManager.cs" />
+    <Compile Include="Manager\SRV\ItemTypeManager.cs" />
+    <Compile Include="Manager\SRV\LoanManager.cs" />
+    <Compile Include="Manager\SRV\RegistrationManager.cs" />
+    <Compile Include="Model\CSMSys.cs">
+      <DependentUpon>CSMSys.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CSMSys.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSMSys.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CSMSysConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\NumberToBangla.cs" />
+    <Compile Include="Utility\NumberToEnglish.cs" />
+    <Compile Include="Utility\ComboData.cs" />
+    <Compile Include="Utility\ComboItem.cs" />
+    <Compile Include="Utility\CSMSysConnection.cs" />
+    <Compile Include="Utility\LibCommonUtility.cs" />
+    <Compile Include="Utility\ManageXMLController.cs" />
+    <Compile Include="Utility\CSMSysConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Model\CSMSys.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CSMSys.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="csmsys pirgonj.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\CSMSys.dbml.layout">
+      <DependentUpon>CSMSys.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

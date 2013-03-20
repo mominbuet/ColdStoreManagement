@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/CSMSys.Web_deploy" />
+  <setParameter name="CSMSysConnection-Web.config Connection String" value="Data Source=SIGRASRV;Initial Catalog=CSMSys;Persist Security Info=False;Integrated Security=False;User ID=sa;Password=srv2@vertex" />
+</parameters>

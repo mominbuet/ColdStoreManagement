@@ -1,0 +1,1575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9386DF3-536D-4AB7-AA9F-23795D935EF9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSMSys.Web</RootNamespace>
+    <AssemblyName>CSMSys.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\From Saad\o4Feb\CSMSys\CSMSys\CSMSys.Web\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Backup\Last Backup 10_03_2013\CSMSys\CSMSys.Web\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\SMMS\SMMS.Web\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\CSMSysLogin.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\CSMSys.ERROR.log.txt" />
+    <Content Include="App_Data\CSMSys.INFO.log.txt" />
+    <Content Include="App_Themes\Default\Images\Appointment.png" />
+    <Content Include="App_Themes\Default\Images\bg.jpg" />
+    <Content Include="App_Themes\Default\Images\Button\bt_close.png" />
+    <Content Include="App_Themes\Default\Images\Button\bt_open.png" />
+    <Content Include="App_Themes\Default\Images\Button\rd_bt_open.png" />
+    <Content Include="App_Themes\Default\Images\coming_soon.jpg" />
+    <Content Include="App_Themes\Default\Images\Document.png" />
+    <Content Include="App_Themes\Default\Images\featured.gif" />
+    <Content Include="App_Themes\Default\Images\feature_img.gif" />
+    <Content Include="App_Themes\Default\Images\footer-bg.gif" />
+    <Content Include="App_Themes\Default\Images\footer.gif" />
+    <Content Include="App_Themes\Default\Images\freelanceicon.png" />
+    <Content Include="App_Themes\Default\Images\gridview\Delete.png" />
+    <Content Include="App_Themes\Default\Images\gridview\Edit.png" />
+    <Content Include="App_Themes\Default\Images\gridview\New.png" />
+    <Content Include="App_Themes\Default\Images\gridview\Refresh.png" />
+    <Content Include="App_Themes\Default\Images\gridview\Search.png" />
+    <Content Include="App_Themes\Default\Images\gridview\select.png" />
+    <Content Include="App_Themes\Default\Images\gridview\View.png" />
+    <Content Include="App_Themes\Default\Images\History.png" />
+    <Content Include="App_Themes\Default\Images\indicator.png" />
+    <Content Include="App_Themes\Default\Images\Left_Arrow.png" />
+    <Content Include="App_Themes\Default\Images\List.png" />
+    <Content Include="App_Themes\Default\Images\ListAccept.png" />
+    <Content Include="App_Themes\Default\Images\ListAdd.png" />
+    <Content Include="App_Themes\Default\Images\ListEdit.png" />
+    <Content Include="App_Themes\Default\Images\ListInformation.png" />
+    <Content Include="App_Themes\Default\Images\Loader.gif" />
+    <Content Include="App_Themes\Default\Images\login.png" />
+    <Content Include="App_Themes\Default\Images\logo.png" />
+    <Content Include="App_Themes\Default\Images\logout.png" />
+    <Content Include="App_Themes\Default\Images\MyReports.png" />
+    <Content Include="App_Themes\Default\Images\Order.png" />
+    <Content Include="App_Themes\Default\Images\page-bg.gif" />
+    <Content Include="App_Themes\Default\Images\print.png" />
+    <Content Include="App_Themes\Default\Images\Registration.png" />
+    <Content Include="App_Themes\Default\Images\Search.png" />
+    <Content Include="App_Themes\Default\Images\serviceicon.png" />
+    <Content Include="App_Themes\Default\Images\Time.png" />
+    <Content Include="App_Themes\Default\Images\WriteDocument.png" />
+    <Content Include="App_Themes\Default\Images\x.png" />
+    <Content Include="App_Themes\Default\Scripts\Common.js" />
+    <Content Include="App_Themes\Default\Scripts\data-view-plugins.js" />
+    <Content Include="App_Themes\Default\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="App_Themes\Default\Scripts\jquery-1.4.1.js" />
+    <Content Include="App_Themes\Default\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="App_Themes\Default\Styles\Default.css" />
+    <Content Include="App_Themes\Default\Styles\Site.css" />
+    <Content Include="App_Themes\GridView\HierarchicalGrid.js" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\jQuery\css\custom-theme\jquery-ui-1.8.21.custom.css" />
+    <Content Include="App_Themes\jQuery\css\jquery.autocomplete.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\AUTHORS.txt" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\hoverintent.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\accordion\sortable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\addClass\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\addClass\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\animate\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\animate\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\folding.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\images\jqueryui_32x32.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\images\jquery_32x32.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\images\transparent_1x1.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\maxheight.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\multiple-remote.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\multiple.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\button\checkbox.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\button\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\button\icons.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\button\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\button\radio.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\button\splitbutton.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\button\toolbar.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\animation.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\date-range.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\inline.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\localization.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\demos.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\dialog\animated.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\dialog\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\dialog\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\dialog\modal.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\events.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\handle.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\revert.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\scroll.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\sortable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\propagation.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\revert.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\shopping-cart.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\effect\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\effect\easing.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\effect\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\hide\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\hide\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\images\calendar.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\position\cycler.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\position\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\position\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\progressbar\animated.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\progressbar\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\progressbar\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\progressbar\resize.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\removeClass\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\removeClass\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\animate.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\helper.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\max-min.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\textarea.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\selectable\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\selectable\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\selectable\serialize.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\show\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\show\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\range.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\rangemax.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\rangemin.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\steps.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\slider\tabs.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\items.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\sortable\portlets.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\switchClass\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\switchClass\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\ajax.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\bottom.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\cookie.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\sortable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\tabs\vertical.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\toggleClass\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\toggleClass\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\toggle\default.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\demos\toggle\index.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\accordion.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\addClass.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\animate.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\autocomplete.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\button.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\datepicker.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\dialog.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\draggable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\droppable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\effect.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\hide.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\position.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\progressbar.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\removeClass.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\resizable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\selectable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\show.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\slider.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\sortable.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\switchClass.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\tabs.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\toggle.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\docs\toggleClass.html" />
+    <Content Include="App_Themes\jQuery\development-bundle\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\external\jquery.cookie.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\external\jquery.metadata.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\external\qunit.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\external\qunit.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\GPL-LICENSE.txt" />
+    <Content Include="App_Themes\jQuery\development-bundle\jquery-1.7.2.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\MIT-LICENSE.txt" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.selectable.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery-ui-1.8.21.custom.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.accordion.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.all.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.autocomplete.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.base.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.button.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.core.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.datepicker.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.dialog.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.progressbar.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.resizable.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.selectable.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.slider.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.tabs.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\themes\custom-theme\jquery.ui.theme.css" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-cy-GB.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-hi.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ka.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-kk.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-km.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-lb.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-mk.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-nl-BE.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery-ui-1.8.21.custom.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.fade.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.fade.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="App_Themes\jQuery\development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="App_Themes\jQuery\index.html" />
+    <Content Include="App_Themes\jQuery\js\grid.locale-en.js" />
+    <Content Include="App_Themes\jQuery\js\jquery-1.7.2.min.js" />
+    <Content Include="App_Themes\jQuery\js\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="App_Themes\jQuery\js\jquery.autocomplete.js" />
+    <Content Include="App_Themes\jQuery\js\jquery.jqGrid.min.js" />
+    <Content Include="App_Themes\Menu\css\dock-example.css" />
+    <Content Include="App_Themes\Menu\css\layout.css" />
+    <Content Include="App_Themes\Menu\images\blank.gif" />
+    <Content Include="App_Themes\Menu\images\calendar-sm.png" />
+    <Content Include="App_Themes\Menu\images\calendar.png" />
+    <Content Include="App_Themes\Menu\images\email-sm.png" />
+    <Content Include="App_Themes\Menu\images\email.png" />
+    <Content Include="App_Themes\Menu\images\history-sm.png" />
+    <Content Include="App_Themes\Menu\images\history.png" />
+    <Content Include="App_Themes\Menu\images\home-sm.png" />
+    <Content Include="App_Themes\Menu\images\home.png" />
+    <Content Include="App_Themes\Menu\images\link-sm.png" />
+    <Content Include="App_Themes\Menu\images\link.png" />
+    <Content Include="App_Themes\Menu\images\main-bg.gif" />
+    <Content Include="App_Themes\Menu\images\music-sm.png" />
+    <Content Include="App_Themes\Menu\images\music.png" />
+    <Content Include="App_Themes\Menu\images\portfolio-sm.png" />
+    <Content Include="App_Themes\Menu\images\portfolio.png" />
+    <Content Include="App_Themes\Menu\images\rss-sm.png" />
+    <Content Include="App_Themes\Menu\images\rss.png" />
+    <Content Include="App_Themes\Menu\images\rss2-sm.png" />
+    <Content Include="App_Themes\Menu\images\rss2.png" />
+    <Content Include="App_Themes\Menu\images\video-sm.png" />
+    <Content Include="App_Themes\Menu\images\video.png" />
+    <Content Include="App_Themes\Menu\js\dock-example.js" />
+    <Content Include="App_Themes\Menu\js\fisheye-iutil.js" />
+    <Content Include="App_Themes\Menu\js\fisheye-iutil.min.js" />
+    <Content Include="App_Themes\Menu\js\jquery.min.js" />
+    <Content Include="App_Themes\TableSorter\Blue\asc.gif" />
+    <Content Include="App_Themes\TableSorter\Blue\bg.gif" />
+    <Content Include="App_Themes\TableSorter\Blue\desc.gif" />
+    <Content Include="App_Themes\TableSorter\Blue\style.css" />
+    <Content Include="App_Themes\TableSorter\Green\asc.png" />
+    <Content Include="App_Themes\TableSorter\Green\bg.png" />
+    <Content Include="App_Themes\TableSorter\Green\desc.png" />
+    <Content Include="App_Themes\TableSorter\Green\style.css" />
+    <Content Include="App_Themes\TableSorter\Scripts\jquery-latest.js" />
+    <Content Include="App_Themes\TableSorter\Scripts\jquery.tablesorter.js" />
+    <Content Include="App_Themes\TableSorter\Scripts\TableSorter.js" />
+    <Content Include="Controls\Administration\Application\AreaPO.aspx" />
+    <Content Include="Controls\Administration\Application\UpazilaPS.aspx" />
+    <Content Include="Controls\INV\Party.aspx" />
+    <Content Include="Controls\INV\Relocate.aspx" />
+    <Content Include="Controls\INV\Serial.aspx" />
+    <Content Include="Controls\Item\ItemDetails.aspx" />
+    <Content Include="Controls\Loading.aspx" />
+    <Content Include="Controls\SRV\BLoan.aspx" />
+    <Content Include="Controls\SRV\DisburseUser.aspx" />
+    <Content Include="Controls\SRV\LCollection.aspx" />
+    <Content Include="Controls\SRV\LDisburse.aspx" />
+    <Content Include="Controls\SRV\Registration.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HtmlReports\LoanAfterRequisition.aspx" />
+    <Content Include="HtmlReports\LoanPreRequisition.aspx" />
+    <Content Include="HtmlReports\SerialReport.aspx" />
+    <Content Include="Pages\ACC\ChartOfAccount.aspx" />
+    <Content Include="Pages\ACC\Ledger.aspx" />
+    <Content Include="Pages\ACC\ReportLedger.aspx" />
+    <Content Include="Pages\ACC\ReportRegister.aspx" />
+    <Content Include="Pages\ACC\ReportVoucher.aspx" />
+    <Content Include="Pages\ACC\VoucherNew.aspx" />
+    <Content Include="Pages\ACC\VoucherRegister.aspx" />
+    <Content Include="Pages\Administration\Application\AreaPOSetup.aspx" />
+    <Content Include="Pages\Administration\Application\ItemSetup.aspx" />
+    <Content Include="Pages\Administration\Application\ItemTypeSetup.aspx" />
+    <Content Include="Pages\Administration\Application\PartySetup.aspx" />
+    <Content Include="Pages\Administration\Application\UpazilaPSSetup.aspx" />
+    <Content Include="Pages\Administration\Application\WebForm1.aspx" />
+    <Content Include="Pages\Administration\User\RoleManagement.aspx" />
+    <Content Include="Pages\Administration\User\UserManagement.aspx" />
+    <Content Include="Pages\BagLoanReport\AllPartyBagLoanReportViewer.aspx" />
+    <Content Include="Pages\BagLoanReport\BagLoanRegister.aspx" />
+    <Content Include="Pages\BagLoanReport\BagLoanReportViewer.aspx" />
+    <Content Include="Pages\BagLoanReport\ReportBagLoan.aspx" />
+    <Content Include="Pages\Default.aspx" />
+    <Content Include="Controls\ErrorHandlers\SMMSError.aspx" />
+    <Content Include="Pages\HRM\Employee\EmployeeList.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Pages\INV\StockLoading.aspx" />
+    <Content Include="Pages\INV\StockLocation.aspx" />
+    <Content Include="Pages\INV\StockRelocate.aspx" />
+    <Content Include="Pages\INV\StockSerial.aspx" />
+    <Content Include="Pages\INV\StockStatus.aspx" />
+    <Content Include="Pages\INV\StockUnloading.aspx" />
+    <Content Include="Pages\LoanDisburseReport\LoanReport.aspx" />
+    <Content Include="Pages\LoanDisburseReport\LoanReportViwer.aspx" />
+    <Content Include="Pages\LoanRequisitionReport\LoanRequisitionView.aspx" />
+    <Content Include="Pages\PartyLedger\PartyLedgerReport.aspx" />
+    <Content Include="Pages\PartyLedger\PartyLedgerView.aspx" />
+    <Content Include="Pages\PartyLedger\PartyWiseLedger.aspx" />
+    <Content Include="Pages\PartyReports\PartyReport.aspx" />
+    <Content Include="Pages\PartyReports\PartyReportViewer.aspx" />
+    <Content Include="Pages\Service\BagloanView.aspx" />
+    <Content Include="Pages\Service\BookIssue.aspx" />
+    <Content Include="Pages\Service\BookIssueView.aspx" />
+    <Content Include="Pages\Service\Delivery.aspx" />
+    <Content Include="Pages\Service\LoanCollect.aspx" />
+    <Content Include="Pages\Service\LoanDisburse.aspx" />
+    <Content Include="Pages\Service\LoanRequisition.aspx" />
+    <Content Include="Pages\Service\Registration.aspx" />
+    <Content Include="Pages\AgreementReport\AgreementReport.aspx" />
+    <Content Include="Pages\AgreementReport\AgreementReportViewer.aspx" />
+    <Content Include="Pages\CollectionReport\CollectionReportViewer.aspx" />
+    <Content Include="Pages\Delivery\DeliveryReport.aspx" />
+    <Content Include="Pages\Delivery\DeliveryReportViewer.aspx" />
+    <Content Include="Pages\Images\Header.JPG" />
+    <Content Include="Pages\CollectionReport\LoanCollectionReport.aspx" />
+    <Content Include="Pages\LoanRequisitionReport\RequisitionReportViewer.aspx" />
+    <Content Include="Pages\StockSerialReport\LoadRegister.aspx" />
+    <Content Include="Pages\StockSerialReport\LoadReportViewer.aspx" />
+    <Content Include="Pages\StockSerialReport\PartySerialRegister.aspx" />
+    <Content Include="Pages\StockSerialReport\SerialReport.aspx" />
+    <Content Include="Pages\StockSerialReport\SerialReportViewer.aspx" />
+    <Content Include="Pages\StockSerialReport\StockReportViewer.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\CSMSysLogin.aspx.cs">
+      <DependentUpon>CSMSysLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\CSMSysLogin.aspx.designer.cs">
+      <DependentUpon>CSMSysLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Application\AreaPO.aspx.cs">
+      <DependentUpon>AreaPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Application\AreaPO.aspx.designer.cs">
+      <DependentUpon>AreaPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Application\UpazilaPS.aspx.cs">
+      <DependentUpon>UpazilaPS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Application\UpazilaPS.aspx.designer.cs">
+      <DependentUpon>UpazilaPS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\INV\Party.aspx.cs">
+      <DependentUpon>Party.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\INV\Party.aspx.designer.cs">
+      <DependentUpon>Party.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\INV\Relocate.aspx.cs">
+      <DependentUpon>Relocate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\INV\Relocate.aspx.designer.cs">
+      <DependentUpon>Relocate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\INV\Serial.aspx.cs">
+      <DependentUpon>Serial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\INV\Serial.aspx.designer.cs">
+      <DependentUpon>Serial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\ItemDetails.aspx.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\ItemDetails.aspx.designer.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Loading.aspx.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Loading.aspx.designer.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRV\BLoan.aspx.cs">
+      <DependentUpon>BLoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRV\BLoan.aspx.designer.cs">
+      <DependentUpon>BLoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRV\DisburseUser.aspx.cs">
+      <DependentUpon>DisburseUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRV\DisburseUser.aspx.designer.cs">
+      <DependentUpon>DisburseUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRV\LCollection.aspx.cs">
+      <DependentUpon>LCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRV\LCollection.aspx.designer.cs">
+      <DependentUpon>LCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRV\LDisburse.aspx.cs">
+      <DependentUpon>LDisburse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRV\LDisburse.aspx.designer.cs">
+      <DependentUpon>LDisburse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRV\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRV\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlReports\LoanAfterRequisition.aspx.cs">
+      <DependentUpon>LoanAfterRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HtmlReports\LoanAfterRequisition.aspx.designer.cs">
+      <DependentUpon>LoanAfterRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlReports\LoanPreRequisition.aspx.cs">
+      <DependentUpon>LoanPreRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HtmlReports\LoanPreRequisition.aspx.designer.cs">
+      <DependentUpon>LoanPreRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlReports\SerialReport.aspx.cs">
+      <DependentUpon>SerialReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HtmlReports\SerialReport.aspx.designer.cs">
+      <DependentUpon>SerialReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ACC\ChartOfAccount.aspx.cs">
+      <DependentUpon>ChartOfAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ACC\ChartOfAccount.aspx.designer.cs">
+      <DependentUpon>ChartOfAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ACC\Ledger.aspx.cs">
+      <DependentUpon>Ledger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ACC\Ledger.aspx.designer.cs">
+      <DependentUpon>Ledger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ACC\ReportLedger.aspx.cs">
+      <DependentUpon>ReportLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ACC\ReportLedger.aspx.designer.cs">
+      <DependentUpon>ReportLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ACC\ReportRegister.aspx.cs">
+      <DependentUpon>ReportRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ACC\ReportRegister.aspx.designer.cs">
+      <DependentUpon>ReportRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ACC\ReportVoucher.aspx.cs">
+      <DependentUpon>ReportVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ACC\ReportVoucher.aspx.designer.cs">
+      <DependentUpon>ReportVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ACC\VoucherNew.aspx.cs">
+      <DependentUpon>VoucherNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ACC\VoucherNew.aspx.designer.cs">
+      <DependentUpon>VoucherNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ACC\VoucherRegister.aspx.cs">
+      <DependentUpon>VoucherRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ACC\VoucherRegister.aspx.designer.cs">
+      <DependentUpon>VoucherRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\AreaPOSetup.aspx.cs">
+      <DependentUpon>AreaPOSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\AreaPOSetup.aspx.designer.cs">
+      <DependentUpon>AreaPOSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\ItemSetup.aspx.cs">
+      <DependentUpon>ItemSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\ItemSetup.aspx.designer.cs">
+      <DependentUpon>ItemSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\ItemTypeSetup.aspx.cs">
+      <DependentUpon>ItemTypeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\ItemTypeSetup.aspx.designer.cs">
+      <DependentUpon>ItemTypeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\PartySetup.aspx.cs">
+      <DependentUpon>PartySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\PartySetup.aspx.designer.cs">
+      <DependentUpon>PartySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\UpazilaPSSetup.aspx.cs">
+      <DependentUpon>UpazilaPSSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\UpazilaPSSetup.aspx.designer.cs">
+      <DependentUpon>UpazilaPSSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Application\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\User\RoleManagement.aspx.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\User\RoleManagement.aspx.designer.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\User\UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\User\UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\AllPartyBagLoanReportViewer.aspx.cs">
+      <DependentUpon>AllPartyBagLoanReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\AllPartyBagLoanReportViewer.aspx.designer.cs">
+      <DependentUpon>AllPartyBagLoanReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\BagLoanRegister.aspx.cs">
+      <DependentUpon>BagLoanRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\BagLoanRegister.aspx.designer.cs">
+      <DependentUpon>BagLoanRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\BagLoanReportViewer.aspx.cs">
+      <DependentUpon>BagLoanReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\BagLoanReportViewer.aspx.designer.cs">
+      <DependentUpon>BagLoanReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\dsBagLoan.cs">
+      <DependentUpon>dsBagLoan.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\dsBagLoan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBagLoan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\ReportBagLoan.aspx.cs">
+      <DependentUpon>ReportBagLoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\ReportBagLoan.aspx.designer.cs">
+      <DependentUpon>ReportBagLoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\rptAllPartyBagReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAllPartyBagReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\BagLoanReport\rptBagLoanReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBagLoanReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ErrorHandlers\SMMSError.aspx.cs">
+      <DependentUpon>SMMSError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ErrorHandlers\SMMSError.aspx.designer.cs">
+      <DependentUpon>SMMSError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HRM\Employee\EmployeeList.aspx.cs">
+      <DependentUpon>EmployeeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HRM\Employee\EmployeeList.aspx.designer.cs">
+      <DependentUpon>EmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\INV\StockLoading.aspx.cs">
+      <DependentUpon>StockLoading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\INV\StockLoading.aspx.designer.cs">
+      <DependentUpon>StockLoading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\INV\StockLocation.aspx.cs">
+      <DependentUpon>StockLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\INV\StockLocation.aspx.designer.cs">
+      <DependentUpon>StockLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\INV\StockRelocate.aspx.cs">
+      <DependentUpon>StockRelocate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\INV\StockRelocate.aspx.designer.cs">
+      <DependentUpon>StockRelocate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\INV\StockSerial.aspx.cs">
+      <DependentUpon>StockSerial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\INV\StockSerial.aspx.designer.cs">
+      <DependentUpon>StockSerial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\INV\StockStatus.aspx.cs">
+      <DependentUpon>StockStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\INV\StockStatus.aspx.designer.cs">
+      <DependentUpon>StockStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\INV\StockUnloading.aspx.cs">
+      <DependentUpon>StockUnloading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\INV\StockUnloading.aspx.designer.cs">
+      <DependentUpon>StockUnloading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanDisburseReport\dsLoanDisburse.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoanDisburse.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanDisburseReport\LoanReport.aspx.cs">
+      <DependentUpon>LoanReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanDisburseReport\LoanReport.aspx.designer.cs">
+      <DependentUpon>LoanReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanDisburseReport\LoanReportViwer.aspx.cs">
+      <DependentUpon>LoanReportViwer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanDisburseReport\LoanReportViwer.aspx.designer.cs">
+      <DependentUpon>LoanReportViwer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanRequisitionReport\LoanRequisitionView.aspx.cs">
+      <DependentUpon>LoanRequisitionView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanRequisitionReport\LoanRequisitionView.aspx.designer.cs">
+      <DependentUpon>LoanRequisitionView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartyLedger\dsPartyInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPartyInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartyLedger\PartyLedgerReport.aspx.cs">
+      <DependentUpon>PartyLedgerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PartyLedger\PartyLedgerReport.aspx.designer.cs">
+      <DependentUpon>PartyLedgerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartyLedger\PartyLedgerView.aspx.cs">
+      <DependentUpon>PartyLedgerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PartyLedger\PartyLedgerView.aspx.designer.cs">
+      <DependentUpon>PartyLedgerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartyLedger\PartyWiseLedger.aspx.cs">
+      <DependentUpon>PartyWiseLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PartyLedger\PartyWiseLedger.aspx.designer.cs">
+      <DependentUpon>PartyWiseLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartyReports\dsPartyReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPartyReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartyReports\PartyReport.aspx.cs">
+      <DependentUpon>PartyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PartyReports\PartyReport.aspx.designer.cs">
+      <DependentUpon>PartyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartyReports\PartyReportViewer.aspx.cs">
+      <DependentUpon>PartyReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PartyReports\PartyReportViewer.aspx.designer.cs">
+      <DependentUpon>PartyReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\BagloanView.aspx.cs">
+      <DependentUpon>BagloanView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\BagloanView.aspx.designer.cs">
+      <DependentUpon>BagloanView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\BookIssue.aspx.cs">
+      <DependentUpon>BookIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\BookIssue.aspx.designer.cs">
+      <DependentUpon>BookIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\BookIssueView.aspx.cs">
+      <DependentUpon>BookIssueView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\BookIssueView.aspx.designer.cs">
+      <DependentUpon>BookIssueView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\Delivery.aspx.cs">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\Delivery.aspx.designer.cs">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\LoanCollect.aspx.cs">
+      <DependentUpon>LoanCollect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\LoanCollect.aspx.designer.cs">
+      <DependentUpon>LoanCollect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\LoanDisburse.aspx.cs">
+      <DependentUpon>LoanDisburse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\LoanDisburse.aspx.designer.cs">
+      <DependentUpon>LoanDisburse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\LoanRequisition.aspx.cs">
+      <DependentUpon>LoanRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\LoanRequisition.aspx.designer.cs">
+      <DependentUpon>LoanRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Service\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Service\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\dsStockSerial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStockSerial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\LoadRegister.aspx.cs">
+      <DependentUpon>LoadRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\LoadRegister.aspx.designer.cs">
+      <DependentUpon>LoadRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\LoadReportViewer.aspx.cs">
+      <DependentUpon>LoadReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\LoadReportViewer.aspx.designer.cs">
+      <DependentUpon>LoadReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\PartySerialRegister.aspx.cs">
+      <DependentUpon>PartySerialRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\PartySerialRegister.aspx.designer.cs">
+      <DependentUpon>PartySerialRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\SerialReport.aspx.cs">
+      <DependentUpon>SerialReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\SerialReport.aspx.designer.cs">
+      <DependentUpon>SerialReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\SerialReportViewer.aspx.cs">
+      <DependentUpon>SerialReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\SerialReportViewer.aspx.designer.cs">
+      <DependentUpon>SerialReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\StockReportViewer.aspx.cs">
+      <DependentUpon>StockReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StockSerialReport\StockReportViewer.aspx.designer.cs">
+      <DependentUpon>StockReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\AgreementReport.aspx.cs">
+      <DependentUpon>AgreementReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\AgreementReport.aspx.designer.cs">
+      <DependentUpon>AgreementReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\AgreementReportViewer.aspx.cs">
+      <DependentUpon>AgreementReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\AgreementReportViewer.aspx.designer.cs">
+      <DependentUpon>AgreementReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\dsAgreementReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAgreementReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\rptAgreementReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAgreementReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\rptDeliveryInfo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDeliveryInfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\AgreementReport\rptItemDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptItemDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\BackUp\rptLoanDisburseReportBackUp.cs">
+      <DependentUpon>rptLoanDisburseReportBackUp.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Pages\CollectionReport\CollectionReportViewer.aspx.cs">
+      <DependentUpon>CollectionReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CollectionReport\CollectionReportViewer.aspx.designer.cs">
+      <DependentUpon>CollectionReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CollectionReport\dsCollection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCollection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CollectionReport\rptCollectionReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCollectionReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\Delivery\DeliveryReport.aspx.cs">
+      <DependentUpon>DeliveryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Delivery\DeliveryReport.aspx.designer.cs">
+      <DependentUpon>DeliveryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Delivery\DeliveryReportViewer.aspx.cs">
+      <DependentUpon>DeliveryReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Delivery\DeliveryReportViewer.aspx.designer.cs">
+      <DependentUpon>DeliveryReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Delivery\dsDeliveryReport.Designer.cs">
+      <DependentUpon>dsDeliveryReport.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Pages\Delivery\rptDeliveryReport.cs">
+      <DependentUpon>rptDeliveryReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Pages\CollectionReport\LoanCollectionReport.aspx.cs">
+      <DependentUpon>LoanCollectionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CollectionReport\LoanCollectionReport.aspx.designer.cs">
+      <DependentUpon>LoanCollectionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanRequisitionReport\rptAfterRequisitionReport.cs">
+      <DependentUpon>rptAfterRequisitionReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanRequisitionReport\dsLoanRequisition.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoanRequisition.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanRequisitionReport\RequisitionReportViewer.aspx.cs">
+      <DependentUpon>RequisitionReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanRequisitionReport\RequisitionReportViewer.aspx.designer.cs">
+      <DependentUpon>RequisitionReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanRequisitionReport\rptLoanRequisitionReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLoanRequisitionReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\CustomXmlSiteMapProvider.cs" />
+    <Compile Include="Utility\MergeGridCels.cs" />
+    <Compile Include="Utility\SessionData.cs" />
+    <Compile Include="Utility\SiteCulture.cs" />
+    <Compile Include="Utility\UIUtility.cs" />
+    <Compile Include="Utility\UserControlBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\WebCommonUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Handlers\" />
+    <Folder Include="Pages\FinalDeliveryReport\" />
+    <Folder Include="Pages\ItemDetails\" />
+    <Folder Include="Pages\Others\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Default.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSMSys.Lib\CSMSys.Lib.csproj">
+      <Project>{3115DF51-E38B-42A5-B9DC-01483E615707}</Project>
+      <Name>CSMSys.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web_EN.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Themes\jQuery\development-bundle\demos\autocomplete\search.php" />
+    <None Include="App_Themes\jQuery\development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="App_Themes\jQuery\development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <None Include="App_Themes\jQuery\development-bundle\package.json" />
+    <None Include="App_Themes\Menu\images\Thumbs.db" />
+    <Content Include="Web_BN.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Pages\AgreementReport\dsAgreementReport.xsc">
+      <DependentUpon>dsAgreementReport.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\AgreementReport\dsAgreementReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAgreementReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\AgreementReport\dsAgreementReport.xss">
+      <DependentUpon>dsAgreementReport.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\BagLoanReport\dsBagLoan.xsc">
+      <DependentUpon>dsBagLoan.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\BagLoanReport\dsBagLoan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBagLoan.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\BagLoanReport\dsBagLoan.xss">
+      <DependentUpon>dsBagLoan.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\CollectionReport\dsCollection.xsc">
+      <DependentUpon>dsCollection.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\CollectionReport\dsCollection.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCollection.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Pages\CollectionReport\dsCollection.xss">
+      <DependentUpon>dsCollection.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\Delivery\dsDeliveryReport.xsc">
+      <DependentUpon>dsDeliveryReport.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\Delivery\dsDeliveryReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDeliveryReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\Delivery\dsDeliveryReport.xss">
+      <DependentUpon>dsDeliveryReport.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\LoanDisburseReport\dsLoanDisburse.xsc">
+      <DependentUpon>dsLoanDisburse.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\LoanDisburseReport\dsLoanDisburse.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoanDisburse.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\LoanDisburseReport\dsLoanDisburse.xss">
+      <DependentUpon>dsLoanDisburse.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\LoanRequisitionReport\dsLoanRequisition.xsc">
+      <DependentUpon>dsLoanRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\LoanRequisitionReport\dsLoanRequisition.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoanRequisition.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\LoanRequisitionReport\dsLoanRequisition.xss">
+      <DependentUpon>dsLoanRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\PartyLedger\dsPartyInfo.xsc">
+      <DependentUpon>dsPartyInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\PartyLedger\dsPartyInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPartyInfo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\PartyLedger\dsPartyInfo.xss">
+      <DependentUpon>dsPartyInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\PartyReports\dsPartyReport.xsc">
+      <DependentUpon>dsPartyReport.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\PartyReports\dsPartyReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPartyReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\PartyReports\dsPartyReport.xss">
+      <DependentUpon>dsPartyReport.xsd</DependentUpon>
+    </None>
+    <Content Include="Site.Master" />
+    <None Include="Pages\StockSerialReport\dsStockSerial.xsc">
+      <DependentUpon>dsStockSerial.xsd</DependentUpon>
+    </None>
+    <None Include="Pages\StockSerialReport\dsStockSerial.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStockSerial.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\StockSerialReport\dsStockSerial.xss">
+      <DependentUpon>dsStockSerial.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Strings.bn-BD.resx" />
+    <Content Include="App_LocalResources\Strings.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Pages\BagLoanReport\rptAllPartyBagReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAllPartyBagReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BagLoanReport\rptBagLoanReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBagLoanReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Strings.bn-BD.resx" />
+    <EmbeddedResource Include="Pages\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AgreementReport\rptAgreementReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAgreementReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AgreementReport\rptDeliveryInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDeliveryInfo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AgreementReport\rptItemDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptItemDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BackUp\rptLoanDisburseReportBackUp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLoanDisburseReportBackUp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Delivery\rptDeliveryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDeliveryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Pages\CollectionReport\rptCollectionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCollectionReport.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Pages\LoanRequisitionReport\rptAfterRequisitionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAfterRequisitionReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\LoanRequisitionReport\rptLoanRequisitionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLoanRequisitionReport.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1454</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

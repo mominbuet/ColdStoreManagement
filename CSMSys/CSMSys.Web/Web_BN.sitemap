@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="" roles="*">
+    <siteMapNode url="~\Default.aspx" title="হোম"  description="হোম" roles="*"/>
+    <siteMapNode url="" title="ভূমিকা"  description="ভূমিকা" roles="*"/>
+    <siteMapNode url="" title="সার্ভিস সমূহ"  description="সার্ভিস সমূহ" roles="*"/>
+    <siteMapNode url="" title="যোগাষোগ"  description="যোগাষোগ" roles="*"/>
+    <siteMapNode url="" title="প্রোফাইল" description="প্রোফাইল" roles="Site Administrator" >
+      <siteMapNode url="~/Pages/Default.aspx" title="ড্যাশবোর্ড" description="ড্যাশবোর্ড" roles="Site Administrator" />
+      <siteMapNode url="" title="মেসেজ ইনবক্স" description="মেসেজ ইনবক্স" roles="Site Administrator" />
+      <siteMapNode url="" title="পাসওয়ার্ড পরিবর্তন" description="পাসওয়ার্ড পরিবর্তন" roles="Site Administrator" />
+    </siteMapNode>
+    <siteMapNode url="" title="এডমিনিস্ট্রেশন" description="এডমিনিস্ট্রেশন" roles="Site Administrator, Super Administrator, Administrator">
+      <siteMapNode url="" title="এপ্লিকেশণ" description="এপ্লিকেশণ" roles="Site Administrator, Super Administrator, Administrator">
+        <siteMapNode url="" title="আইটেম সেটআপ >" description="আইটেম সেটআপ" roles="Site Administrator, Super Administrator, Administrator" >
+          <siteMapNode url="~\Pages\Admin\ApplicationSettings\ItemSetup.aspx" title="আইটেম সেটআপ" description="আইটেম সেটআপ" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+          <siteMapNode url="~\Pages\Admin\ApplicationSettings\ItemTypeSetup.aspx" title="আইটেম টাইপ সেটআপ" description="আইটেম টাইপ সেটআপ" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+          <siteMapNode url="" title="সার্ভিস সেটআপ" description="সার্ভিস সেটআপ" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+          <siteMapNode url="" title="ঋণ সেটআপ" description="ঋণ সেটআপ" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+        </siteMapNode>
+        <siteMapNode url="~\Pages\INV\PartySetup.aspx?language=bn" title="পার্টি সেটআপ" description="পার্টি সেটআপ" roles="Site Administrator, Super Administrator, Administrator" />
+        <siteMapNode url="~\Pages\Admin\ApplicationSettings\AgentSetup.aspx" title="এজেন্ট সেটআপ" description="এজেন্ট সেটআপ" roles="Site Administrator, Super Administrator, Administrator" />
+        <siteMapNode url="~\Pages\Administration\Application\AreaPOSetup.aspx" title="ডাকঘর সেটআপ" description="ডাকঘর সেটআপ" roles="Site Administrator, Super Administrator, Administrator" />
+        <siteMapNode url="~\Pages\Administration\Application\UpazilaPSSetup.aspx" title="থানা/উপজেলা সেটআপ" description="থানা/উপজেলা সেটআপ" roles="Site Administrator, Super Administrator, Administrator" />
+      </siteMapNode>
+      <siteMapNode url="" title="ব্যাবহারকারী" description="ব্যাবহারকারী" roles="Site Administrator, Super Administrator, Administrator, Accountant">
+        <siteMapNode url="" title="ব্যাবহারকারী সেটআপ" description="ব্যাবহারকারী সেটআপ" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      </siteMapNode>
+      <siteMapNode url="" title="ওয়েবসাইট" description="ওয়েবসাইট" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+    </siteMapNode>
+    <siteMapNode url="" title="কর্মচারী" description="কর্মচারী" roles="Site Administrator, Super Administrator, Administrator, Accountant">
+      <siteMapNode url="~\Pages\HRM\Employee\EmployeeList.aspx" title="কর্মচারী লিস্ট" description="কর্মচারী লিস্ট" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <!--<siteMapNode url="" title="Employee Attendance" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Leave" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Training" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Visit" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Promotion" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Award" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Publication" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Membership" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="Employee Punishment" description="" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>-->
+    </siteMapNode>
+    <siteMapNode url="" title="ক্রয়-বিক্রয়" description="ক্রয়-বিক্রয়" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+      <siteMapNode url="" title="আইটেম ক্রয়" description="আইটেম ক্রয়" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="আইটেম বিক্রয়" description="আইটেম বিক্রয়" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="আইটেম রিটার্ন" description="আইটেম রিটার্ন" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+    </siteMapNode>
+    <siteMapNode url="" title="সার্ভিস" description="সার্ভিস" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+      <siteMapNode url="~\Pages\Service\Registration.aspx?language=bn" title="দলিল" description="দলিল" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+      <siteMapNode url="" title="ঋণ" description="ঋণ" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+        <siteMapNode url="" title="ঋণ গ্রহণ" description="ঋণ গ্রহণ" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+        <siteMapNode url="" title="ঋণ প্রদান" description="ঋণ প্রদান" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      </siteMapNode>
+      <siteMapNode url="" title="ডেলিভারী" description="ডেলিভারী" roles="Site Administrator, Super Administrator, Administrator, Accountant"/>
+    </siteMapNode>
+    <siteMapNode url="" title="বুকিং" description="বুকিং" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+      <siteMapNode url="" title="স্টক বুকিং" description="স্টক বুকিং" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+    </siteMapNode>
+    <siteMapNode url="" title="স্টক" description="স্টক" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+      <siteMapNode url="~\Pages\INV\StockSerial.aspx?language=bn" title="স্টক সিরিয়াল" description="স্টক সিরিয়াল" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="স্টক লোডিং" description="স্টক লোডিং" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="স্টকের অবস্হান" description="স্টকের অবস্হান" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="~\Pages\INV\StockRelocate.aspx?language=bn" title="অবস্হান পরিবর্তন (পালট)" description="অবস্হান পরিবর্তন (পালট)" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="স্টক আনলোডিং" description="স্টক আনলোডিং" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="স্টকের অবস্হা" description="স্টকের অবস্হা" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+    </siteMapNode>
+    <siteMapNode url="" title="একাউন্টস" description="একাউন্টস" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+      <siteMapNode url="" title="চার্ট অব একাউন্টস" description="চার্ট অব একাউন্টস" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="ভাউচার" description="ভাউচার" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+        <siteMapNode url="" title="ডেবিট ভাউচার" description="ডেবিট ভাউচার" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+        <siteMapNode url="" title="ক্রেডিট ভাউচার" description="ক্রেডিট ভাউচার" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+        <siteMapNode url="" title="জার্নাল ভাউচার" description="জার্নাল ভাউচার" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      </siteMapNode>
+      <siteMapNode url="" title="ভাউচার রেজিস্ট্রার" description="ভাউচার রেজিস্ট্রার" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="বিলস" description="বিলস" roles="Site Administrator, Super Administrator, Administrator, Accountant" >
+        <siteMapNode url="" title="গ্রহণযোগ্য বিল" description="গ্রহণযোগ্য বিল" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+        <siteMapNode url="" title="প্রদানযোগ্য বিল" description="প্রদানযোগ্য বিল" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="রিপোর্টস" description="রিপোর্টস" roles="Site AdministratorSite, Administrator, Super Administrator, Administrator, Accountant" >
+      <siteMapNode url="" title="এপ্লিকেশণ" description="এপ্লিকেশণ" roles="Site Administrator, Super Administrator, Administrator"/>
+      <siteMapNode url="" title="ব্যাবহারকারী" description="ব্যাবহারকারী" roles="Site Administrator, Super Administrator, Administrator"/>
+      <siteMapNode url="" title="ওয়েবসাইট" description="ওয়েবসাইট" roles="Site Administrator, Super Administrator, Administrator"/>
+      <siteMapNode url="" title="কর্মচারী" description="কর্মচারী" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="ক্রয়-বিক্রয়" description="ক্রয়-বিক্রয়" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="সার্ভিস" description="সার্ভিস" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="স্টক" description="স্টক" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+      <siteMapNode url="" title="একাউন্টস" description="একাউন্টস" roles="Site Administrator, Super Administrator, Administrator, Accountant" />
+    </siteMapNode>
+    <siteMapNode url="" title="হেল্প" description="হেল্প" roles="Site Administrator" >
+      <siteMapNode url="" title="হেল্প" description="হেল্প" roles="Site Administrator" />
+      <siteMapNode url="" title="ম্যানুয়াল" description="ম্যানুয়াল" roles="Site Administrator" />
+      <siteMapNode url="" title="এবাউট" description="এবাউট" roles="Site Administrator" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

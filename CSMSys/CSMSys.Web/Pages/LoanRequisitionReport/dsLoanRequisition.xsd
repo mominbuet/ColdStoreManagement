@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLoanRequisition" targetNamespace="http://tempuri.org/dsLoanRequisition.xsd" xmlns:mstns="http://tempuri.org/dsLoanRequisition.xsd" xmlns="http://tempuri.org/dsLoanRequisition.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLoanRequisition" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsLoanRequisition" msprop:Generator_UserDSName="dsLoanRequisition">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LoanRequisitionApproved" msprop:Generator_TableClassName="LoanRequisitionApprovedDataTable" msprop:Generator_TableVarName="tableLoanRequisitionApproved" msprop:Generator_TablePropName="LoanRequisitionApproved" msprop:Generator_RowDeletingName="LoanRequisitionApprovedRowDeleting" msprop:Generator_UserTableName="LoanRequisitionApproved" msprop:Generator_RowChangingName="LoanRequisitionApprovedRowChanging" msprop:Generator_RowEvHandlerName="LoanRequisitionApprovedRowChangeEventHandler" msprop:Generator_RowDeletedName="LoanRequisitionApprovedRowDeleted" msprop:Generator_RowEvArgName="LoanRequisitionApprovedRowChangeEvent" msprop:Generator_RowChangedName="LoanRequisitionApprovedRowChanged" msprop:Generator_RowClassName="LoanRequisitionApprovedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" msprop:Generator_UserColumnName="PartyName" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyCode" msprop:Generator_ColumnVarNameInTable="columnPartyCode" msprop:Generator_ColumnPropNameInRow="PartyCode" msprop:Generator_ColumnPropNameInTable="PartyCodeColumn" msprop:Generator_UserColumnName="PartyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="CarrySum" msprop:Generator_ColumnVarNameInTable="columnCarrySum" msprop:Generator_ColumnPropNameInRow="CarrySum" msprop:Generator_ColumnPropNameInTable="CarrySumColumn" msprop:Generator_UserColumnName="CarrySum" type="xs:double" minOccurs="0" />
+              <xs:element name="Total_Loan_Disbursed" msprop:Generator_ColumnVarNameInTable="columnTotal_Loan_Disbursed" msprop:Generator_ColumnPropNameInRow="Total_Loan_Disbursed" msprop:Generator_ColumnPropNameInTable="Total_Loan_DisbursedColumn" msprop:Generator_UserColumnName="Total_Loan_Disbursed" type="xs:double" minOccurs="0" />
+              <xs:element name="Total_Bag_Disbursed" msprop:Generator_ColumnVarNameInTable="columnTotal_Bag_Disbursed" msprop:Generator_ColumnPropNameInRow="Total_Bag_Disbursed" msprop:Generator_ColumnPropNameInTable="Total_Bag_DisbursedColumn" msprop:Generator_UserColumnName="Total_Bag_Disbursed" type="xs:double" minOccurs="0" />
+              <xs:element name="Requisitioned_Bags" msprop:Generator_ColumnVarNameInTable="columnRequisitioned_Bags" msprop:Generator_ColumnPropNameInRow="Requisitioned_Bags" msprop:Generator_ColumnPropNameInTable="Requisitioned_BagsColumn" msprop:Generator_UserColumnName="Requisitioned_Bags" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RequisitionReportData" msprop:Generator_TableClassName="RequisitionReportDataDataTable" msprop:Generator_TableVarName="tableRequisitionReportData" msprop:Generator_TablePropName="RequisitionReportData" msprop:Generator_RowDeletingName="RequisitionReportDataRowDeleting" msprop:Generator_UserTableName="RequisitionReportData" msprop:Generator_RowChangingName="RequisitionReportDataRowChanging" msprop:Generator_RowEvHandlerName="RequisitionReportDataRowChangeEventHandler" msprop:Generator_RowDeletedName="RequisitionReportDataRowDeleted" msprop:Generator_RowEvArgName="RequisitionReportDataRowChangeEvent" msprop:Generator_RowChangedName="RequisitionReportDataRowChanged" msprop:Generator_RowClassName="RequisitionReportDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" msprop:Generator_UserColumnName="PartyName" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyCode" msprop:Generator_ColumnVarNameInTable="columnPartyCode" msprop:Generator_ColumnPropNameInRow="PartyCode" msprop:Generator_ColumnPropNameInTable="PartyCodeColumn" msprop:Generator_UserColumnName="PartyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="CarrySum" msprop:Generator_ColumnVarNameInTable="columnCarrySum" msprop:Generator_ColumnPropNameInRow="CarrySum" msprop:Generator_ColumnPropNameInTable="CarrySumColumn" msprop:Generator_UserColumnName="CarrySum" type="xs:double" minOccurs="0" />
+              <xs:element name="Total_Loan_Disbursed" msprop:Generator_ColumnVarNameInTable="columnTotal_Loan_Disbursed" msprop:Generator_ColumnPropNameInRow="Total_Loan_Disbursed" msprop:Generator_ColumnPropNameInTable="Total_Loan_DisbursedColumn" msprop:Generator_UserColumnName="Total_Loan_Disbursed" type="xs:double" minOccurs="0" />
+              <xs:element name="Total_Bag_Disbursed" msprop:Generator_ColumnVarNameInTable="columnTotal_Bag_Disbursed" msprop:Generator_ColumnPropNameInRow="Total_Bag_Disbursed" msprop:Generator_ColumnPropNameInTable="Total_Bag_DisbursedColumn" msprop:Generator_UserColumnName="Total_Bag_Disbursed" type="xs:double" minOccurs="0" />
+              <xs:element name="Requisitioned_Bags" msprop:Generator_ColumnVarNameInTable="columnRequisitioned_Bags" msprop:Generator_ColumnPropNameInRow="Requisitioned_Bags" msprop:Generator_ColumnPropNameInTable="Requisitioned_BagsColumn" msprop:Generator_UserColumnName="Requisitioned_Bags" type="xs:int" minOccurs="0" />
+              <xs:element name="After_Bag" msprop:Generator_ColumnVarNameInTable="columnAfter_Bag" msprop:Generator_ColumnPropNameInRow="After_Bag" msprop:Generator_ColumnPropNameInTable="After_BagColumn" msprop:Generator_UserColumnName="After_Bag" type="xs:int" minOccurs="0" />
+              <xs:element name="After_LoanDisbursed" msprop:Generator_ColumnVarNameInTable="columnAfter_LoanDisbursed" msprop:Generator_ColumnPropNameInRow="After_LoanDisbursed" msprop:Generator_ColumnPropNameInTable="After_LoanDisbursedColumn" msprop:Generator_UserColumnName="After_LoanDisbursed" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

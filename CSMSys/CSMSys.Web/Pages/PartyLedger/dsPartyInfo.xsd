@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPartyInfo" targetNamespace="http://tempuri.org/dsPartyInfo.xsd" xmlns:mstns="http://tempuri.org/dsPartyInfo.xsd" xmlns="http://tempuri.org/dsPartyInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPartyInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPartyInfo" msprop:Generator_UserDSName="dsPartyInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PartyDetails" msprop:Generator_TableClassName="PartyDetailsDataTable" msprop:Generator_TableVarName="tablePartyDetails" msprop:Generator_TablePropName="PartyDetails" msprop:Generator_RowDeletingName="PartyDetailsRowDeleting" msprop:Generator_UserTableName="PartyDetails" msprop:Generator_RowChangingName="PartyDetailsRowChanging" msprop:Generator_RowEvHandlerName="PartyDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="PartyDetailsRowDeleted" msprop:Generator_RowEvArgName="PartyDetailsRowChangeEvent" msprop:Generator_RowChangedName="PartyDetailsRowChanged" msprop:Generator_RowClassName="PartyDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PartyID" msprop:Generator_ColumnVarNameInTable="columnPartyID" msprop:Generator_ColumnPropNameInRow="PartyID" msprop:Generator_ColumnPropNameInTable="PartyIDColumn" msprop:Generator_UserColumnName="PartyID" type="xs:int" minOccurs="0" />
+              <xs:element name="PartyCode" msprop:Generator_ColumnVarNameInTable="columnPartyCode" msprop:Generator_ColumnPropNameInRow="PartyCode" msprop:Generator_ColumnPropNameInTable="PartyCodeColumn" msprop:Generator_UserColumnName="PartyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" msprop:Generator_UserColumnName="PartyName" type="xs:string" minOccurs="0" />
+              <xs:element name="FatherName" msprop:Generator_ColumnVarNameInTable="columnFatherName" msprop:Generator_ColumnPropNameInRow="FatherName" msprop:Generator_ColumnPropNameInTable="FatherNameColumn" msprop:Generator_UserColumnName="FatherName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactNo" msprop:Generator_ColumnVarNameInTable="columnContactNo" msprop:Generator_ColumnPropNameInRow="ContactNo" msprop:Generator_ColumnPropNameInTable="ContactNoColumn" msprop:Generator_UserColumnName="ContactNo" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaVillageName" msprop:Generator_ColumnVarNameInTable="columnAreaVillageName" msprop:Generator_ColumnPropNameInRow="AreaVillageName" msprop:Generator_ColumnPropNameInTable="AreaVillageNameColumn" msprop:Generator_UserColumnName="AreaVillageName" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaPOName" msprop:Generator_ColumnVarNameInTable="columnAreaPOName" msprop:Generator_ColumnPropNameInRow="AreaPOName" msprop:Generator_ColumnPropNameInTable="AreaPONameColumn" msprop:Generator_UserColumnName="AreaPOName" type="xs:string" minOccurs="0" />
+              <xs:element name="UpazilaPSName" msprop:Generator_ColumnVarNameInTable="columnUpazilaPSName" msprop:Generator_ColumnPropNameInRow="UpazilaPSName" msprop:Generator_ColumnPropNameInTable="UpazilaPSNameColumn" msprop:Generator_UserColumnName="UpazilaPSName" type="xs:string" minOccurs="0" />
+              <xs:element name="DistrictName" msprop:Generator_ColumnVarNameInTable="columnDistrictName" msprop:Generator_ColumnPropNameInRow="DistrictName" msprop:Generator_ColumnPropNameInTable="DistrictNameColumn" msprop:Generator_UserColumnName="DistrictName" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyType" msprop:Generator_ColumnVarNameInTable="columnPartyType" msprop:Generator_ColumnPropNameInRow="PartyType" msprop:Generator_ColumnPropNameInTable="PartyTypeColumn" msprop:Generator_UserColumnName="PartyType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

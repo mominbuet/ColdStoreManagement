@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="CSMSys.Web.DefaultMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+    <link href="App_Themes/Default/Styles/Default.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div id="logo">
+                <asp:Image ID="Logo" runat="server" ImageUrl="App_Themes/Default/Images/logo.png" meta:resourcekey="logo" />
+            </div>
+            <%--<div class="title">
+                <h1>
+                    Cold Storage Management System
+                </h1>
+            </div>--%>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        Log In <a href="~/Account/CSMSysLogin.aspx" ID="HeadLoginStatus" runat="server"><asp:Image ID="Login" runat="server" ImageUrl="App_Themes/Default/Images/login.png" meta:resourcekey="login" /></a>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="languageselection">
+                                            <asp:HyperLink ID="hlEnglish" runat="server" NavigateUrl="~/?language=en" >English</asp:HyperLink> | 
+                                            <asp:HyperLink ID="hlBangla" runat="server" NavigateUrl="~/?language=bn">বাংলা</asp:HyperLink>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle">
+                                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>! Log Out 
+                                    </td>
+                                    <td valign="middle">
+                                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutImageUrl="App_Themes/Default/Images/logout.png" LogoutPageUrl="~/" meta:resourcekey="logout"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+
+            <%--<!-- BEGIN DOCK 1 ============================================================ -->
+		    <div id="dock">
+			    <div class="dock-container">
+				    <a class="dock-item" href="Default.aspx"><span>Example&nbsp;1</span><img src="App_Themes/Menu/images/home.png" alt="home" /></a> 
+				    <a class="dock-item" href="#"><span>Example&nbsp;2</span><img src="App_Themes/Menu/images/email.png" alt="contact" /></a> 
+				    <a class="dock-item" href="#"><span>Example&nbsp;3</span><img src="App_Themes/Menu/images/portfolio.png" alt="portfolio" /></a> 
+				    <a class="dock-item" href="#"><span>All&nbsp;Examples</span><img src="App_Themes/Menu/images/music.png" alt="music" /></a> 
+				    <a class="dock-item" href="#"><span>Video</span><img src="App_Themes/Menu/images/video.png" alt="video" /></a> 
+				    <a class="dock-item" href="#"><span>History</span><img src="App_Themes/Menu/images/history.png" alt="history" /></a> 
+				    <a class="dock-item" href="#"><span>Calendar</span><img src="App_Themes/Menu/images/calendar.png" alt="calendar" /></a> 
+				    <a class="dock-item" href="#"><span>Links</span><img src="App_Themes/Menu/images/link.png" alt="links" /></a> 
+				    <a class="dock-item" href="#"><span>RSS</span><img src="App_Themes/Menu/images/rss.png" alt="rss" /></a> 
+				    <a class="dock-item" href="#"><span>RSS2</span><img src="App_Themes/Menu/images/rss2.png" alt="rss" /></a> 
+			    </div><!-- end div .dock-container -->
+		    </div><!-- end div .dock #dock -->
+		    <!-- END DOCK 1 ============================================================ -->--%>
+
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="False"
+                    IncludeStyleBlock="False" Orientation="Horizontal" DataSourceID="CSMSysSiteMapDataSource">
+                    <DynamicMenuStyle CssClass="IE8MenuFix" />
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="CSMSysSiteMapDataSource" runat="server" ShowStartingNode="False"
+                    SiteMapProvider="CustomXmlSiteMapProvider" />
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+            <p>All contents © 2012 Vertex Software (BD) Ltd. All rights reserved.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

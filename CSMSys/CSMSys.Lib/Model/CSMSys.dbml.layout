@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 29, 15.5" name="CSMSys">
+  <DataContextMoniker Name="/CSMSysDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3f50b1ec-634d-4f2d-ae84-8dd965b66c34" absoluteBounds="11.75, 4.125, 2, 1.7535424804687496">
+      <DataClassMoniker Name="/CSMSysDataContext/ADMCountry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d032d44-00ae-440e-9b8f-2cc5998d5a11" absoluteBounds="11.765, 4.585, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4f5bc64-f8fc-4bdd-9e9f-d409d093662b" absoluteBounds="14.5, 4, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/CSMSysDataContext/ADMDivision" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a92ce4d4-7e2a-4314-ad01-0c6d758c5d16" absoluteBounds="14.515, 4.46, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b14e4a0a-067d-4483-b61a-8472b1add9f3" absoluteBounds="17.25, 4, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/CSMSysDataContext/ADMDistrict" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e9b4b5b-5ec5-40dc-afbe-e51cc9a3962c" absoluteBounds="17.265, 4.46, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d7fbe98-acdc-4a39-8a6a-bb61f816df6e" absoluteBounds="20, 1.25, 2, 2.24658447265625">
+      <DataClassMoniker Name="/CSMSysDataContext/ADMUpazilaPS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b0fca37-543e-4293-ba2d-c8e433c5fc6d" absoluteBounds="20.015000000596046, 1.7100000008940697, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec68bf08-8752-46eb-8a29-c40967639400" absoluteBounds="22.75, 1.25, 2, 2.24658447265625">
+      <DataClassMoniker Name="/CSMSysDataContext/ADMAreaPO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a7f0c10-6d07-461b-b60a-30657b6ffe52" absoluteBounds="22.765000000596046, 1.7100000008940697, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.75 : 5.10659912109375); (14.0416666666667 : 5.10659912109375 : JumpStart); (14.2083333333333 : 5.10659912109375 : JumpEnd); (14.5 : 5.10659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/ADMCountry/ADMCountry_ADMDivision" />
+      <nodes>
+        <classShapeMoniker Id="3f50b1ec-634d-4f2d-ae84-8dd965b66c34" />
+        <classShapeMoniker Id="f4f5bc64-f8fc-4bdd-9e9f-d409d093662b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.5 : 5.07774983723958); (17.25 : 5.07774983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/ADMDivision/ADMDivision_ADMDistrict" />
+      <nodes>
+        <classShapeMoniker Id="f4f5bc64-f8fc-4bdd-9e9f-d409d093662b" />
+        <classShapeMoniker Id="b14e4a0a-067d-4483-b61a-8472b1add9f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.09375 : 4); (18.09375 : 1.84375); (20 : 1.84375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/ADMDistrict/ADMDistrict_ADMUpazilaPS" />
+      <nodes>
+        <classShapeMoniker Id="b14e4a0a-067d-4483-b61a-8472b1add9f3" />
+        <classShapeMoniker Id="0d7fbe98-acdc-4a39-8a6a-bb61f816df6e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22 : 2.40625); (22.75 : 2.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/ADMUpazilaPS/ADMUpazilaPS_ADMAreaPO" />
+      <nodes>
+        <classShapeMoniker Id="0d7fbe98-acdc-4a39-8a6a-bb61f816df6e" />
+        <classShapeMoniker Id="ec68bf08-8752-46eb-8a29-c40967639400" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="81a770a0-3f4f-4039-980f-0c3f6cee6f85" absoluteBounds="22.75, 5.125, 2, 2.7396264648437496">
+      <DataClassMoniker Name="/CSMSysDataContext/INVStockSerial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f0c482c-ce29-4d3e-a100-3cf3c44928fd" absoluteBounds="22.765000000596046, 5.58500000089407, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42a1a42b-78ba-4206-92e5-cd6dfbafd706" absoluteBounds="0.75, 8.25, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_Application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8eb73c7-ac1c-41ee-836b-eda8f9fd547a" absoluteBounds="0.76500000059604645, 8.71000000089407, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3dd12b73-bf99-4ea3-b83d-bffdbb1c4949" isExpanded="false" absoluteBounds="0.875, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_WebEvent_Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="123bb7d5-bfca-451e-877e-f83327f8cfaa" absoluteBounds="0.89, 1.7100000000000009, 1.9700000000000002, 2.67266845703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="49bce1e2-47b9-4be4-ab89-99f6c14898da" absoluteBounds="9.25, 11, 2, 4.2187524414062505">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1eb5c81b-766b-411d-a9bb-040e68d983c3" absoluteBounds="9.2650000005960464, 11.46000000089407, 1.9700000000000002, 3.65875244140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74a3aa46-2ea9-46ee-8476-6187305e30a0" absoluteBounds="3.5, 5.5, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_Path" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68907803-baad-4ed6-8882-8519862ae270" absoluteBounds="3.5150000005960464, 5.96000000089407, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="91df2bb0-4396-426d-8a0b-7b07f26022b7" absoluteBounds="6.25, 5.625, 2, 1.2605004882812496">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_PersonalizationAllUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d38e43f-6420-4cf5-a3e0-6e8321223439" absoluteBounds="6.2650000005960464, 6.08500000089407, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83eabf36-efec-4fb9-953e-f5fb26030389" absoluteBounds="9.25, 8.125, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_PersonalizationPerUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="574d3879-cb57-48cb-a5ee-4509d3bedf1c" absoluteBounds="9.2650000005960464, 8.58500000089407, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a30da91-f85f-4858-a80a-11d951b6007e" absoluteBounds="6.25, 10.625, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_Profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1073edc-03f2-4fe7-aeb5-b341f8d97b23" absoluteBounds="6.2650000005960464, 11.08500000089407, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fe09e94-6fd9-4808-871b-e67837deb45f" absoluteBounds="3.5, 7.875, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="256e8bc0-a1f1-4439-bced-446fd3d5ca51" absoluteBounds="3.5150000005960464, 8.33500000089407, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4171e43e-2496-4ff5-b340-93dee5346b6f" isExpanded="false" absoluteBounds="3.75, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_SchemaVersion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d266f462-b44c-42a6-9ec9-375fee810152" absoluteBounds="3.765, 3.835, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c6bd5d1-659c-41e7-9ebc-74ac103f7da7" absoluteBounds="3.5, 10.375, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d17ff22c-a369-4658-915d-5838649480f4" absoluteBounds="3.5150000005960464, 10.83500000089407, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dfad9ca3-e75a-4127-afad-db06ecdb4682" absoluteBounds="6.25, 8.625, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/CSMSysDataContext/aspnet_UsersInRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52d83375-776f-4f51-abf5-6a7f6fee118c" absoluteBounds="6.2650000005960464, 9.08500000089407, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 9.82859537760417); (1.75 : 14.2203597006264); (9.25 : 14.2203597006264)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_Application/aspnet_Application_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="42a1a42b-78ba-4206-92e5-cd6dfbafd706" />
+        <classShapeMoniker Id="49bce1e2-47b9-4be4-ab89-99f6c14898da" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 8.25); (1.75 : 6.28929768880208); (3.5 : 6.28929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_Application/aspnet_Application_aspnet_Path" />
+      <nodes>
+        <classShapeMoniker Id="42a1a42b-78ba-4206-92e5-cd6dfbafd706" />
+        <classShapeMoniker Id="74a3aa46-2ea9-46ee-8476-6187305e30a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.31814697265625); (6.25 : 6.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_Path/aspnet_Path_aspnet_PersonalizationAllUser" />
+      <nodes>
+        <classShapeMoniker Id="74a3aa46-2ea9-46ee-8476-6187305e30a0" />
+        <classShapeMoniker Id="91df2bb0-4396-426d-8a0b-7b07f26022b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.53125); (10.25 : 5.53125); (10.25 : 8.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_Path/aspnet_Path_aspnet_PersonalizationPerUser" />
+      <nodes>
+        <classShapeMoniker Id="74a3aa46-2ea9-46ee-8476-6187305e30a0" />
+        <classShapeMoniker Id="83eabf36-efec-4fb9-953e-f5fb26030389" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.9479484047927); (3.5 : 8.9479484047927)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_Application/aspnet_Application_aspnet_Role" />
+      <nodes>
+        <classShapeMoniker Id="42a1a42b-78ba-4206-92e5-cd6dfbafd706" />
+        <classShapeMoniker Id="5fe09e94-6fd9-4808-871b-e67837deb45f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.4944482419826); (9.25 : 12.4944482419826)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_User/aspnet_User_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="5c6bd5d1-659c-41e7-9ebc-74ac103f7da7" />
+        <classShapeMoniker Id="49bce1e2-47b9-4be4-ab89-99f6c14898da" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.4365374615385); (6.0625 : 9.87403746153846); (6.0625 : 10.2708968098958); (8.875 : 10.2708968098958); (9.25 : 9.89589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_User/aspnet_User_aspnet_PersonalizationPerUser" />
+      <nodes>
+        <classShapeMoniker Id="5c6bd5d1-659c-41e7-9ebc-74ac103f7da7" />
+        <classShapeMoniker Id="83eabf36-efec-4fb9-953e-f5fb26030389" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.5104484049479); (6.25 : 11.5104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_User/aspnet_User_aspnet_Profile" />
+      <nodes>
+        <classShapeMoniker Id="5c6bd5d1-659c-41e7-9ebc-74ac103f7da7" />
+        <classShapeMoniker Id="8a30da91-f85f-4858-a80a-11d951b6007e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 9.82859537760417); (2.2812525 : 11.4527498372396); (3.5 : 11.4527498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_Application/aspnet_Application_aspnet_User" />
+      <nodes>
+        <classShapeMoniker Id="42a1a42b-78ba-4206-92e5-cd6dfbafd706" />
+        <classShapeMoniker Id="5c6bd5d1-659c-41e7-9ebc-74ac103f7da7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.13544840494792); (6.25 : 9.13544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_Role/aspnet_Role_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="5fe09e94-6fd9-4808-871b-e67837deb45f" />
+        <classShapeMoniker Id="dfad9ca3-e75a-4127-afad-db06ecdb4682" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.46769230774198 : 10.375); (5.875 : 9.96769230774198); (5.875 : 10.1939925126607); (6.24999999963989 : 9.81899251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/aspnet_User/aspnet_User_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="5c6bd5d1-659c-41e7-9ebc-74ac103f7da7" />
+        <classShapeMoniker Id="dfad9ca3-e75a-4127-afad-db06ecdb4682" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4135a224-79ef-4fde-9ef1-5ccba1c036e7" absoluteBounds="25.75, 1.25, 2, 2.24658447265625">
+      <DataClassMoniker Name="/CSMSysDataContext/ADMAreaVillage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9a397e5-823e-4b7b-997b-14435e7dcb78" absoluteBounds="25.765, 1.71, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(24.75 : 2.52005126953125); (25.75 : 2.52005126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/ADMAreaPO/ADMAreaPO_ADMAreaVillage" />
+      <nodes>
+        <classShapeMoniker Id="ec68bf08-8752-46eb-8a29-c40967639400" />
+        <classShapeMoniker Id="4135a224-79ef-4fde-9ef1-5ccba1c036e7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1b50fd7d-27be-4eaf-b181-78542bf26b7c" isExpanded="false" absoluteBounds="3.25, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/INVItemType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffc83cac-34ab-4aae-8965-b671479dbdaf" absoluteBounds="3.2650000000000006, 1.585, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cad01d73-05d8-474d-be31-6696cd1c33c0" isExpanded="false" absoluteBounds="5.875, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/INVBagFair" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5b3cc7a-7c95-4cfb-ad15-a38ac9b8bcae" absoluteBounds="5.89, 1.585, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50671ceb-101d-4d2a-9abb-2a47a6006f50" isExpanded="false" absoluteBounds="0.875, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/SRVLoanCollection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="321034ec-c576-4332-8f44-20da15ce95fc" absoluteBounds="0.89000000000000012, 0.96, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0bced3b7-5208-47e6-9f15-02762c945496" isExpanded="false" absoluteBounds="5.875, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/INVRelocate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8677eb1-03a3-4f61-8a01-7a6ed99647ba" absoluteBounds="5.89, 0.96, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b23c04b-5834-48da-a814-be8e8b4093d0" isExpanded="false" absoluteBounds="8.5, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/INVItemDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a951c1c-37a1-4b46-b6ed-abdc33c4dd40" absoluteBounds="8.515, 4.085, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="795fe8c3-a707-4b15-a8e1-9667155a3d22" isExpanded="false" absoluteBounds="1, 2.875, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/SRVDelivery" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2682f80-52d4-4234-b3a8-b9be940068c3" absoluteBounds="1.0150000000000001, 3.335, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0beb7af5-49bb-435d-8b9c-f88ccb9c9773" absoluteBounds="26.75, 5.25, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/CSMSysDataContext/INVStockLoading" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14e5c734-8f97-4d57-afec-35a25b3cff67" absoluteBounds="26.765, 5.71, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67712191-cef6-480e-a53b-3681daaef669" isExpanded="false" absoluteBounds="1.125, 2, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/SRVBookIssue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19674343-e042-4276-babb-2feb7aaf5a91" absoluteBounds="1.1400000000000001, 2.46, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddbf8aee-b826-44f0-8945-73f2638d3b4c" absoluteBounds="20.125, 4.125, 2, 5.0404890950520826">
+      <DataClassMoniker Name="/CSMSysDataContext/INVParty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa95a9a1-b73f-414d-8f89-6a40daee1f34" absoluteBounds="20.14, 4.585, 1.9700000000000002, 4.480489095052083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(22.125 : 6.68350341796875); (22.75 : 6.68350341796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/INVParty/INVParty_INVStockSerial" />
+      <nodes>
+        <classShapeMoniker Id="ddbf8aee-b826-44f0-8945-73f2638d3b4c" />
+        <classShapeMoniker Id="81a770a0-3f4f-4039-980f-0c3f6cee6f85" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21.0625 : 3.49658447265625); (21.0625 : 4.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/ADMUpazilaPS/ADMUpazilaPS_INVParty" />
+      <nodes>
+        <classShapeMoniker Id="0d7fbe98-acdc-4a39-8a6a-bb61f816df6e" />
+        <classShapeMoniker Id="ddbf8aee-b826-44f0-8945-73f2638d3b4c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e73d26a5-0a5b-4334-b13d-60f0c80a8563" isExpanded="false" absoluteBounds="3.75, 1.875, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/SRVBagLoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da8c3f9e-b777-44cf-9289-bb9f641a16e4" absoluteBounds="3.765, 2.335, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(21.125 : 4.125); (21.125 : 3.74658447265625); (19.75 : 3.74658447265625); (19.75 : 2.1); (5.75 : 2.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSMSysDataContext/INVParty/INVParty_SRVBagLoan" />
+      <nodes>
+        <classShapeMoniker Id="ddbf8aee-b826-44f0-8945-73f2638d3b4c" />
+        <classShapeMoniker Id="e73d26a5-0a5b-4334-b13d-60f0c80a8563" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="92a2c452-bf82-4152-89d4-05ba5ebbde90" isExpanded="false" absoluteBounds="3.25, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/CSMSysDataContext/SRVLoanDisburse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0046d2df-b1be-488a-8a57-513bb9fe361a" absoluteBounds="3.265, 0.96, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e736bcb-f03a-40ad-95c9-766ffedcf059" absoluteBounds="13.75, 7.5, 2, 3.5613631184895826">
+      <DataClassMoniker Name="/CSMSysDataContext/SRVRegistration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="584ffaec-0c01-4773-9dd5-d19fc0838480" absoluteBounds="13.765, 7.9600000000000009, 1.9700000000000002, 3.001363118489583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.125 : 7.5); (14.125 : 3.78125); (10.5 : 3.78125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CSMSysDataContext/SRVRegistration/SRVRegistration_INVItemDetail" />
+      <nodes>
+        <classShapeMoniker Id="0e736bcb-f03a-40ad-95c9-766ffedcf059" />
+        <classShapeMoniker Id="5b23c04b-5834-48da-a814-be8e8b4093d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20.125 : 8.33274454752604); (15.75 : 8.33274454752604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CSMSysDataContext/INVParty/INVParty_SRVRegistration" />
+      <nodes>
+        <classShapeMoniker Id="ddbf8aee-b826-44f0-8945-73f2638d3b4c" />
+        <classShapeMoniker Id="0e736bcb-f03a-40ad-95c9-766ffedcf059" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.75 : 7.86462646484375); (23.75 : 10.1446761067708); (15.75 : 10.1446761067708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CSMSysDataContext/INVStockSerial/INVStockSerial_SRVRegistration" />
+      <nodes>
+        <classShapeMoniker Id="81a770a0-3f4f-4039-980f-0c3f6cee6f85" />
+        <classShapeMoniker Id="0e736bcb-f03a-40ad-95c9-766ffedcf059" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

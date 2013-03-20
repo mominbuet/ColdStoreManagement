@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="CSMSysConnection-Web.config Connection String" description="CSMSysConnection Connection String used in web.config by the application to access the database." defaultvalue="Data Source=SIGRASRV;Initial Catalog=CSMSys;Persist Security Info=False;Integrated Security=False;User ID=sa;Password=srv2@vertex" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CSMSysConnection']/@connectionString" />
+  </parameter>
+</parameters>

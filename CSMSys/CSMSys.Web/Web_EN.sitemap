@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="" roles="*">
+    <siteMapNode url="~\Default.aspx" title="Home"  description="Home" roles="*"/>
+    <!--<siteMapNode url="" title="About us"  description="About us" roles="*"/>-->
+    <!--
+    <siteMapNode url="" title="Services"  description="Our Services" roles="*"/>
+    <siteMapNode url="" title="Contact"  description="Contact" roles="*"/>
+    <siteMapNode url="" title="Profile" description="Profile" roles="Site Administrator" >
+      <siteMapNode url="~/Pages/Default.aspx" title="Dashboard" description="Dashboard" roles="Site Administrator" />
+      <siteMapNode url="" title="Message Inbox" description="Message Inbox" roles="Site Administrator" />
+      <siteMapNode url="" title="Change Password" description="Change Password" roles="Site Administrator" />
+    </siteMapNode>-->
+    <siteMapNode url="" title="Admin" description="Administration" roles="Site Administrator, Super Administrator, Administrator">
+      <siteMapNode url="" title="Application" description="Application" roles="Site Administrator, Super Administrator, Administrator">
+        <siteMapNode url="" title="Item Setup >" description="Item Setup" roles="Site Administrator, Super Administrator, Administrator" >
+          <!--<siteMapNode url="~\Pages\Admin\ApplicationSettings\ItemSetup.aspx" title="Item Setup" description="Item Setup" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>-->
+          <!--<siteMapNode url="~\Pages\Admin\ApplicationSettings\ItemTypeSetup.aspx" title="Item Type Setup" description="Item Type Setup" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>-->
+          <siteMapNode url="" title="Service Setup" description="Service Setup" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+          <siteMapNode url="" title="Loan Setup" description="Loan Setup" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+        </siteMapNode>
+        <!--<siteMapNode url="~\Pages\Administration\Application\AreaPOSetup.aspx" title="Area/Post Office Setup" description="Area/Post Office Setup" roles="Site Administrator, Super Administrator, Administrator" />-->
+        <!--<siteMapNode url="~\Pages\Administration\Application\UpazilaPSSetup.aspx" title="Police Station/Upazila" description="Police Station/Upazila Setup" roles="Site Administrator, Super Administrator, Administrator" />-->
+      </siteMapNode>
+      <siteMapNode url="" title="User" description="User" roles="Site Administrator, Super Administrator, Administrator, Accounts">
+        <siteMapNode url="" title="User Setup" description="User Setup" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      </siteMapNode>
+      <!--<siteMapNode url="" title="Website" description="Website" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>-->
+    </siteMapNode>
+    <siteMapNode url="" title="Staff" description="Staff" roles="Site Administrator, Super Administrator, Administrator, Accounts">
+      <siteMapNode url="~\Pages\HRM\Employee\EmployeeList.aspx" title="Staff List" description="Staff List" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <!--<siteMapNode url="" title="Employee Attendance" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Leave" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Training" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Visit" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Promotion" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Award" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Publication" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Membership" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Employee Punishment" description="" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>-->
+    </siteMapNode>
+    <siteMapNode url="" title="Sales" description="Sales" roles="Site Administrator, Super Administrator, Administrator, Accounts" >
+      <siteMapNode url="" title="Purchase Item" description="Purchase Item" roles="Site Administrator, Super Administrator, Administrator, Accounts"/>
+      <siteMapNode url="" title="Sales Item" description="Sales Item" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Sales Return" description="Sales Return" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+    </siteMapNode>
+    <siteMapNode url="" title="Service" description="Service" roles="Site Administrator, Super Administrator, Administrator, Accounts, Service" >
+      <siteMapNode url="~\Pages\Administration\Application\PartySetup.aspx" title="Customer Setup" description="Customer Setup" roles="Site Administrator, Super Administrator, Administrator, Accounts, Service" />
+      <siteMapNode url="" title="Book Issue -->" description="Book Issue" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" >
+        <siteMapNode url="~\Pages\Service\BookIssue.aspx" title="New" description="Book Issue" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+        <siteMapNode url="~\Pages\Service\BookIssueView.aspx" title="View" description="Book Issue" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+
+      </siteMapNode>
+      <siteMapNode url="" title="Registration -->"   description="Registration" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service">
+        <siteMapNode url="~\Pages\AgreementReport\AgreementReport.aspx" title="New" description="Registration" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+        <siteMapNode url="~\Pages\service\registration.aspx" title="Edit" description="Registration" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+
+      </siteMapNode>
+      <siteMapNode url="" title="Loan -->" description="Loan" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" >
+        <siteMapNode url="~\Pages\Service\BagLoanView.aspx" title="Bag Loan" description="Bag Loan" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+        <siteMapNode url="~\Pages\Service\LoanRequisition.aspx" title="Loan Requisition" description="Loan Requisition" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+        <siteMapNode url="~\Pages\LoanRequisitionReport\LoanRequisitionView.aspx" title="Loan Requisition Approval" description="Loan Requisition Approval" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+        <siteMapNode url="~\Pages\Service\LoanDisburse.aspx" title="Loan Disburse" description="Loan Disburse" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+        <siteMapNode url="~\Pages\Service\LoanCollect.aspx" title="Loan Collection" description="Loan Collection" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+      </siteMapNode>
+      <siteMapNode url="~\Pages\Service\Delivery.aspx" title="Delivery" description="Delivery" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service"/>
+      <siteMapNode url="~\Pages\PartyLedger\PartyLedgerView.aspx" title="Party Ledger" description="Party Ledger" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service"/>
+
+    </siteMapNode>
+    <siteMapNode url="" title="Booking" description="Booking" roles="Site Administrator, Super Administrator, Administrator, Accounts" >
+      <siteMapNode url="" title="Stock Booking" description="Stock Booking" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+    </siteMapNode>
+    <siteMapNode url="" title="Stock" description="Stock" roles="Site Administrator, Super Administrator, Administrator, Accounts, Inventory,Service" >
+      <siteMapNode url="~\Pages\INV\StockSerial.aspx" title="Stock Serial" description="Stock Serial" roles="Site Administrator, Super Administrator, Administrator,  Accounts, Inventory,Service" />
+      <siteMapNode url="~\Pages\INV\StockLoading.aspx" title="Stock Loading" description="Stock Loading" roles="Site Administrator, Super Administrator, Administrator, Accounts, Inventory" />
+      <siteMapNode url="~\Pages\INV\StockLocation.aspx" title="Stock Location" description="Stock Location" roles="Site Administrator, Super Administrator, Administrator, Accounts, Inventory" />
+      <siteMapNode url="~\Pages\INV\StockRelocate.aspx" title="Stock Relocate" description="Stock Relocate" roles="Site Administrator, Super Administrator, Administrator, Accounts, Inventory" />
+      <siteMapNode url="~\Pages\INV\StockUnloading.aspx" title="Stock Unloading" description="Stock Unloading" roles="Site Administrator, Super Administrator, Administrator, Accounts, Inventory" />
+      <siteMapNode url="~\Pages\INV\StockStatus.aspx" title="Stock Status" description="Stock Status" roles="Service,Site Administrator, Super Administrator, Administrator, Accounts, Inventory" />
+    </siteMapNode>
+    <siteMapNode url="" title="Accounts" description="Accounts" roles="Site Administrator, Super Administrator, Administrator, Accounts" >
+      <siteMapNode url="~\Pages\ACC\Ledger.aspx" title="Chart of Accounts" description="Chart of Accounts" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Voucher" description="Voucher" roles="Site Administrator, Super Administrator, Administrator, Accounts" >
+        <siteMapNode url="~\Pages\ACC\VoucherNew.aspx?Voucher=1" title="Debit Voucher" description="Debit Voucher" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+        <siteMapNode url="~\Pages\ACC\VoucherNew.aspx?Voucher=2" title="Credit Voucher" description="Credit Voucher" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+        <siteMapNode url="~\Pages\ACC\VoucherNew.aspx?Voucher=3" title="Journal Voucher" description="Journal Voucher" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      </siteMapNode>
+      <siteMapNode url="~\Pages\ACC\VoucherRegister.aspx" title="Voucher Register" description="Voucher Register" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Bills" description="Bills" roles="Site Administrator, Super Administrator, Administrator, Accounts" >
+        <siteMapNode url="" title="Bills Receivable" description="Bills Receivable" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+        <siteMapNode url="" title="Bills Payable" description="Bills Payable" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Reports" description="Reports" roles="Site Administrator, Super Administrator, Administrator,Service,Accounts" >
+      <siteMapNode url="" title="Application" description="Application Reports" roles="Site Administrator, Super Administrator, Administrator,Accounts"/>
+      <!--<siteMapNode url="" title="User" description="User Reports" roles="Site Administrator, Super Administrator, Administrator"/>
+      <siteMapNode url="" title="Website" description="Website Reports" roles="Site Administrator, Super Administrator, Administrator"/>-->
+      <siteMapNode url="" title="Staff" description="Staff Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Sales" description="Sales Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Service" description="Service Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Stock" description="Stock Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Booking" description="Booking Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+      <siteMapNode url="" title="Accounts" description="Accounts Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts" >
+        <siteMapNode url="~\Pages\ACC\ReportRegister.aspx" title="Voucher Register" description="Voucher Register" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+        <siteMapNode url="~\Pages\ACC\ReportLedger.aspx" title="Ledger Book" description="Ledger Book" roles="Site Administrator, Super Administrator, Administrator, Accounts" />
+        <!--<siteMapNode url="" title="Bills Payable" description="Bills Payable" roles="Site Administrator, Super Administrator, Administrator, Accounts" />-->
+      </siteMapNode>
+      <siteMapNode url="~\Pages\Delivery\DeliveryReport.aspx" title="Delivery Reports" description="Delivery Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+      <siteMapNode url="~\Pages\PartyReports\PartyReport.aspx" title="Party Reports" description="Party Reports" roles="Site Administrator, Super Administrator, Administrator, Accounts,Service" />
+    </siteMapNode>
+    <siteMapNode url="" title="Help" description="Help" roles="*" >
+      <siteMapNode url="" title="Help" description="Help" roles="Site Administrator" />
+      <siteMapNode url="" title="Manual" description="Manual" roles="Site Administrator" />
+      <siteMapNode url="" title="About" description="About" roles="Site Administrator" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

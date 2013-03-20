@@ -1,0 +1,6 @@
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Lib\bin\Release\CSMSys.Lib.dll.config
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Lib\bin\Release\CSMSys.Lib.dll
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Lib\bin\Release\CSMSys.Lib.pdb
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Lib\obj\Release\ResolveAssemblyReference.cache
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Lib\obj\Release\CSMSys.Lib.dll
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Lib\obj\Release\CSMSys.Lib.pdb

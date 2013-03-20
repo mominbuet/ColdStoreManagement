@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCollection" targetNamespace="http://tempuri.org/dsCollection.xsd" xmlns:mstns="http://tempuri.org/dsCollection.xsd" xmlns="http://tempuri.org/dsCollection.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCollection" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCollection" msprop:Generator_UserDSName="dsCollection">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SRVLoanCollection" msprop:Generator_TableClassName="SRVLoanCollectionDataTable" msprop:Generator_TableVarName="tableSRVLoanCollection" msprop:Generator_TablePropName="SRVLoanCollection" msprop:Generator_RowDeletingName="SRVLoanCollectionRowDeleting" msprop:Generator_UserTableName="SRVLoanCollection" msprop:Generator_RowChangingName="SRVLoanCollectionRowChanging" msprop:Generator_RowEvHandlerName="SRVLoanCollectionRowChangeEventHandler" msprop:Generator_RowDeletedName="SRVLoanCollectionRowDeleted" msprop:Generator_RowEvArgName="SRVLoanCollectionRowChangeEvent" msprop:Generator_RowChangedName="SRVLoanCollectionRowChanged" msprop:Generator_RowClassName="SRVLoanCollectionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LCollectionID" msprop:Generator_ColumnVarNameInTable="columnLCollectionID" msprop:Generator_ColumnPropNameInRow="LCollectionID" msprop:Generator_ColumnPropNameInTable="LCollectionIDColumn" msprop:Generator_UserColumnName="LCollectionID" type="xs:int" minOccurs="0" />
+              <xs:element name="SerialIDs" msprop:Generator_ColumnVarNameInTable="columnSerialIDs" msprop:Generator_ColumnPropNameInRow="SerialIDs" msprop:Generator_ColumnPropNameInTable="SerialIDsColumn" msprop:Generator_UserColumnName="SerialIDs" type="xs:string" minOccurs="0" />
+              <xs:element name="LoanID" msprop:Generator_ColumnVarNameInTable="columnLoanID" msprop:Generator_ColumnPropNameInRow="LoanID" msprop:Generator_ColumnPropNameInTable="LoanIDColumn" msprop:Generator_UserColumnName="LoanID" type="xs:int" minOccurs="0" />
+              <xs:element name="days" msprop:Generator_ColumnVarNameInTable="columndays" msprop:Generator_ColumnPropNameInRow="days" msprop:Generator_ColumnPropNameInTable="daysColumn" msprop:Generator_UserColumnName="days" type="xs:int" minOccurs="0" />
+              <xs:element name="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" msprop:Generator_UserColumnName="PartyName" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyID" msprop:Generator_ColumnVarNameInTable="columnPartyID" msprop:Generator_ColumnPropNameInRow="PartyID" msprop:Generator_ColumnPropNameInTable="PartyIDColumn" msprop:Generator_UserColumnName="PartyID" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalLoan" msprop:Generator_ColumnVarNameInTable="columnTotalLoan" msprop:Generator_ColumnPropNameInRow="TotalLoan" msprop:Generator_ColumnPropNameInTable="TotalLoanColumn" msprop:Generator_UserColumnName="TotalLoan" type="xs:int" minOccurs="0" />
+              <xs:element name="InterestAmount" msprop:Generator_ColumnVarNameInTable="columnInterestAmount" msprop:Generator_ColumnPropNameInRow="InterestAmount" msprop:Generator_ColumnPropNameInTable="InterestAmountColumn" msprop:Generator_UserColumnName="InterestAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

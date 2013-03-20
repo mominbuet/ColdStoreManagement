@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBagLoan" targetNamespace="http://tempuri.org/dsCollection.xsd" xmlns:mstns="http://tempuri.org/dsCollection.xsd" xmlns="http://tempuri.org/dsCollection.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBagLoan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsBagLoan" msprop:Generator_UserDSName="dsBagLoan">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SRVBagLoan" msprop:Generator_TableClassName="SRVBagLoanDataTable" msprop:Generator_TableVarName="tableSRVBagLoan" msprop:Generator_TablePropName="SRVBagLoan" msprop:Generator_RowDeletingName="SRVBagLoanRowDeleting" msprop:Generator_UserTableName="SRVBagLoan" msprop:Generator_RowChangingName="SRVBagLoanRowChanging" msprop:Generator_RowEvHandlerName="SRVBagLoanRowChangeEventHandler" msprop:Generator_RowDeletedName="SRVBagLoanRowDeleted" msprop:Generator_RowEvArgName="SRVBagLoanRowChangeEvent" msprop:Generator_RowChangedName="SRVBagLoanRowChanged" msprop:Generator_RowClassName="SRVBagLoanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BagLoanID" msprop:Generator_ColumnVarNameInTable="columnBagLoanID" msprop:Generator_ColumnPropNameInRow="BagLoanID" msprop:Generator_ColumnPropNameInTable="BagLoanIDColumn" msprop:Generator_UserColumnName="BagLoanID" type="xs:int" minOccurs="0" />
+              <xs:element name="BagNumber" msprop:Generator_ColumnVarNameInTable="columnBagNumber" msprop:Generator_ColumnPropNameInRow="BagNumber" msprop:Generator_ColumnPropNameInTable="BagNumberColumn" msprop:Generator_UserColumnName="BagNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="ChequeNo" msprop:Generator_ColumnVarNameInTable="columnChequeNo" msprop:Generator_ColumnPropNameInRow="ChequeNo" msprop:Generator_ColumnPropNameInTable="ChequeNoColumn" msprop:Generator_UserColumnName="ChequeNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ChequeDate" msprop:Generator_ColumnVarNameInTable="columnChequeDate" msprop:Generator_ColumnPropNameInRow="ChequeDate" msprop:Generator_ColumnPropNameInTable="ChequeDateColumn" msprop:Generator_UserColumnName="ChequeDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Bank" msprop:Generator_ColumnVarNameInTable="columnBank" msprop:Generator_ColumnPropNameInRow="Bank" msprop:Generator_ColumnPropNameInTable="BankColumn" msprop:Generator_UserColumnName="Bank" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyID" msprop:Generator_ColumnVarNameInTable="columnPartyID" msprop:Generator_ColumnPropNameInRow="PartyID" msprop:Generator_ColumnPropNameInTable="PartyIDColumn" msprop:Generator_UserColumnName="PartyID" type="xs:int" minOccurs="0" />
+              <xs:element name="Branch" msprop:Generator_ColumnVarNameInTable="columnBranch" msprop:Generator_ColumnPropNameInRow="Branch" msprop:Generator_ColumnPropNameInTable="BranchColumn" msprop:Generator_UserColumnName="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="LoanAmount" msprop:Generator_ColumnVarNameInTable="columnLoanAmount" msprop:Generator_ColumnPropNameInRow="LoanAmount" msprop:Generator_ColumnPropNameInTable="LoanAmountColumn" msprop:Generator_UserColumnName="LoanAmount" type="xs:int" minOccurs="0" />
+              <xs:element name="cdate" msdata:Caption="AmountPerBag" msprop:Generator_ColumnVarNameInTable="columncdate" msprop:Generator_ColumnPropNameInRow="cdate" msprop:Generator_ColumnPropNameInTable="cdateColumn" msprop:Generator_UserColumnName="cdate" type="xs:string" minOccurs="0" />
+              <xs:element name="AmountPerBag" msprop:Generator_ColumnVarNameInTable="columnAmountPerBag" msprop:Generator_ColumnPropNameInRow="AmountPerBag" msprop:Generator_ColumnPropNameInTable="AmountPerBagColumn" msprop:Generator_UserColumnName="AmountPerBag" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PartyDetails" msprop:Generator_TableClassName="PartyDetailsDataTable" msprop:Generator_TableVarName="tablePartyDetails" msprop:Generator_TablePropName="PartyDetails" msprop:Generator_RowDeletingName="PartyDetailsRowDeleting" msprop:Generator_UserTableName="PartyDetails" msprop:Generator_RowChangingName="PartyDetailsRowChanging" msprop:Generator_RowEvHandlerName="PartyDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="PartyDetailsRowDeleted" msprop:Generator_RowEvArgName="PartyDetailsRowChangeEvent" msprop:Generator_RowChangedName="PartyDetailsRowChanged" msprop:Generator_RowClassName="PartyDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PartyID" msprop:Generator_ColumnVarNameInTable="columnPartyID" msprop:Generator_ColumnPropNameInRow="PartyID" msprop:Generator_ColumnPropNameInTable="PartyIDColumn" msprop:Generator_UserColumnName="PartyID" type="xs:int" minOccurs="0" />
+              <xs:element name="PartyCode" msprop:Generator_ColumnVarNameInTable="columnPartyCode" msprop:Generator_ColumnPropNameInRow="PartyCode" msprop:Generator_ColumnPropNameInTable="PartyCodeColumn" msprop:Generator_UserColumnName="PartyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" msprop:Generator_UserColumnName="PartyName" type="xs:string" minOccurs="0" />
+              <xs:element name="FatherName" msprop:Generator_ColumnVarNameInTable="columnFatherName" msprop:Generator_ColumnPropNameInRow="FatherName" msprop:Generator_ColumnPropNameInTable="FatherNameColumn" msprop:Generator_UserColumnName="FatherName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactNo" msprop:Generator_ColumnVarNameInTable="columnContactNo" msprop:Generator_ColumnPropNameInRow="ContactNo" msprop:Generator_ColumnPropNameInTable="ContactNoColumn" msprop:Generator_UserColumnName="ContactNo" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaVillageName" msprop:Generator_ColumnVarNameInTable="columnAreaVillageName" msprop:Generator_ColumnPropNameInRow="AreaVillageName" msprop:Generator_ColumnPropNameInTable="AreaVillageNameColumn" msprop:Generator_UserColumnName="AreaVillageName" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaPOName" msprop:Generator_ColumnVarNameInTable="columnAreaPOName" msprop:Generator_ColumnPropNameInRow="AreaPOName" msprop:Generator_ColumnPropNameInTable="AreaPONameColumn" msprop:Generator_UserColumnName="AreaPOName" type="xs:string" minOccurs="0" />
+              <xs:element name="UpazilaPSName" msprop:Generator_ColumnVarNameInTable="columnUpazilaPSName" msprop:Generator_ColumnPropNameInRow="UpazilaPSName" msprop:Generator_ColumnPropNameInTable="UpazilaPSNameColumn" msprop:Generator_UserColumnName="UpazilaPSName" type="xs:string" minOccurs="0" />
+              <xs:element name="DistrictName" msprop:Generator_ColumnVarNameInTable="columnDistrictName" msprop:Generator_ColumnPropNameInRow="DistrictName" msprop:Generator_ColumnPropNameInTable="DistrictNameColumn" msprop:Generator_UserColumnName="DistrictName" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyType" msprop:Generator_ColumnVarNameInTable="columnPartyType" msprop:Generator_ColumnPropNameInRow="PartyType" msprop:Generator_ColumnPropNameInTable="PartyTypeColumn" msprop:Generator_UserColumnName="PartyType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AllPartyBagloan" msprop:Generator_TableClassName="AllPartyBagloanDataTable" msprop:Generator_TableVarName="tableAllPartyBagloan" msprop:Generator_TablePropName="AllPartyBagloan" msprop:Generator_RowDeletingName="AllPartyBagloanRowDeleting" msprop:Generator_UserTableName="AllPartyBagloan" msprop:Generator_RowChangingName="AllPartyBagloanRowChanging" msprop:Generator_RowEvHandlerName="AllPartyBagloanRowChangeEventHandler" msprop:Generator_RowDeletedName="AllPartyBagloanRowDeleted" msprop:Generator_RowEvArgName="AllPartyBagloanRowChangeEvent" msprop:Generator_RowChangedName="AllPartyBagloanRowChanged" msprop:Generator_RowClassName="AllPartyBagloanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BagLoanID" msprop:Generator_ColumnVarNameInTable="columnBagLoanID" msprop:Generator_ColumnPropNameInRow="BagLoanID" msprop:Generator_ColumnPropNameInTable="BagLoanIDColumn" msprop:Generator_UserColumnName="BagLoanID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="PartyID" msprop:Generator_ColumnVarNameInTable="columnPartyID" msprop:Generator_ColumnPropNameInRow="PartyID" msprop:Generator_ColumnPropNameInTable="PartyIDColumn" msprop:Generator_UserColumnName="PartyID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="BagNumber" msprop:Generator_ColumnVarNameInTable="columnBagNumber" msprop:Generator_ColumnPropNameInRow="BagNumber" msprop:Generator_ColumnPropNameInTable="BagNumberColumn" msprop:Generator_UserColumnName="BagNumber" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PartyType" msprop:Generator_ColumnVarNameInTable="columnPartyType" msprop:Generator_ColumnPropNameInRow="PartyType" msprop:Generator_ColumnPropNameInTable="PartyTypeColumn" msprop:Generator_UserColumnName="PartyType" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" msprop:Generator_UserColumnName="PartyName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactNo" msprop:Generator_ColumnVarNameInTable="columnContactNo" msprop:Generator_ColumnPropNameInRow="ContactNo" msprop:Generator_ColumnPropNameInTable="ContactNoColumn" msprop:Generator_UserColumnName="ContactNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyCode" msprop:Generator_ColumnVarNameInTable="columnPartyCode" msprop:Generator_ColumnPropNameInRow="PartyCode" msprop:Generator_ColumnPropNameInTable="PartyCodeColumn" msprop:Generator_UserColumnName="PartyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Bagloaded" msprop:Generator_ColumnVarNameInTable="columnBagloaded" msprop:Generator_ColumnPropNameInRow="Bagloaded" msprop:Generator_ColumnPropNameInTable="BagloadedColumn" msprop:Generator_UserColumnName="Bagloaded" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

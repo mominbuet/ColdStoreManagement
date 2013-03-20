@@ -1,0 +1,13 @@
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\bin\CSMSys.Web.dll
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\bin\CSMSys.Web.pdb
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\bin\bn-BD\CSMSys.Web.resources.dll
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\bin\CSMSys.Lib.dll
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\bin\CSMSys.Lib.pdb
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\ResolveAssemblyReference.cache
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\CSMSys.Web.Pages.Strings.resources
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\CSMSys.Web.Pages.Strings.bn-BD.resources
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\GenerateResource.read.1.tlog
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\GenerateResource.write.1.tlog
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\bn-BD\CSMSys.Web.resources.dll
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\CSMSys.Web.dll
+D:\Back up\Jobaer\Bak13_shad\Bak12\CSMSys\CSMSys.Web\obj\Release\CSMSys.Web.pdb

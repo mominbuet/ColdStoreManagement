@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSMSys.Lib", "CSMSys.Lib\CSMSys.Lib.csproj", "{3115DF51-E38B-42A5-B9DC-01483E615707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSMSys.Web", "CSMSys.Web\CSMSys.Web.csproj", "{B9386DF3-536D-4AB7-AA9F-23795D935EF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3115DF51-E38B-42A5-B9DC-01483E615707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3115DF51-E38B-42A5-B9DC-01483E615707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3115DF51-E38B-42A5-B9DC-01483E615707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3115DF51-E38B-42A5-B9DC-01483E615707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9386DF3-536D-4AB7-AA9F-23795D935EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9386DF3-536D-4AB7-AA9F-23795D935EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9386DF3-536D-4AB7-AA9F-23795D935EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9386DF3-536D-4AB7-AA9F-23795D935EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
