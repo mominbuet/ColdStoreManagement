@@ -92,6 +92,7 @@
     <Content Include="App_Themes\Default\Images\footer-bg.gif" />
     <Content Include="App_Themes\Default\Images\footer.gif" />
     <Content Include="App_Themes\Default\Images\freelanceicon.png" />
+    <Content Include="App_Themes\Default\Images\gridview\add_user_256.png" />
     <Content Include="App_Themes\Default\Images\gridview\Delete.png" />
     <Content Include="App_Themes\Default\Images\gridview\Edit.png" />
     <Content Include="App_Themes\Default\Images\gridview\New.png" />

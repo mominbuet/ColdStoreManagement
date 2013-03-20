@@ -127,3 +127,9 @@ F:\CSMSys\CSMSys.Lib\bin\Debug\CSMSys.Lib.pdb
 F:\CSMSys\CSMSys.Lib\obj\Debug\ResolveAssemblyReference.cache
 F:\CSMSys\CSMSys.Lib\obj\Debug\CSMSys.Lib.dll
 F:\CSMSys\CSMSys.Lib\obj\Debug\CSMSys.Lib.pdb
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Lib\bin\Debug\CSMSys.Lib.dll.config
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Lib\bin\Debug\CSMSys.Lib.dll
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Lib\bin\Debug\CSMSys.Lib.pdb
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Lib\obj\Debug\CSMSys.Lib.csprojResolveAssemblyReference.cache
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Lib\obj\Debug\CSMSys.Lib.dll
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Lib\obj\Debug\CSMSys.Lib.pdb

@@ -77,6 +77,19 @@
                         </div>
                         <asp:Button ID="btnRefresh" runat="server" Text="Refresh" Style="display: none" OnClick="btnRefresh_Click" />
                     </td>
+                    <td align="center" style="width: 3%;">
+                        <asp:ImageButton ID="imgnewparty" runat="server" CommandName="New" ImageUrl="~/App_Themes/Default/Images/gridview/add_user_256.png"
+                            ToolTip="New" Width="16px" Height="16px" />
+                        <cc1:ModalPopupExtender ID="ModalPopupExtender3" BackgroundCssClass="ModalPopupBG"
+                            runat="server" CancelControlID="ButtonNewCancel" OkControlID="ButtonNewDone"
+                            TargetControlID="imgnewparty" PopupControlID="DivNewPWindow" OnOkScript="NewOkayScript();">
+                        </cc1:ModalPopupExtender>
+
+                        <div id="DivNewPWindow" style="display: none;" class="popupParty">
+                            <iframe id="Iframe1" frameborder="0" width="870px" height="304px" src="../../../Controls/INV/Party.aspx?UIMODE=NEW" class="frameborder" scrolling="no"></iframe>
+
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>

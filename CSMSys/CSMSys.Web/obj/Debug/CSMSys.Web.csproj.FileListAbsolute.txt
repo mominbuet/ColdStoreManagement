@@ -427,3 +427,15 @@ F:\CSMSys\CSMSys.Web\obj\Debug\GenerateResource.write.1.tlog
 F:\CSMSys\CSMSys.Web\obj\Debug\bn-BD\CSMSys.Web.resources.dll
 F:\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.dll
 F:\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.pdb
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\bin\CSMSys.Web.dll
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\bin\CSMSys.Web.pdb
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\bin\bn-BD\CSMSys.Web.resources.dll
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\bin\CSMSys.Lib.dll
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\bin\CSMSys.Lib.pdb
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.csprojResolveAssemblyReference.cache
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.Pages.Strings.resources
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.Pages.Strings.bn-BD.resources
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.csproj.GenerateResource.Cache
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\obj\Debug\bn-BD\CSMSys.Web.resources.dll
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.dll
+E:\CSMSys 10pm 13032013\CSMSys\CSMSys.Web\obj\Debug\CSMSys.Web.pdb
