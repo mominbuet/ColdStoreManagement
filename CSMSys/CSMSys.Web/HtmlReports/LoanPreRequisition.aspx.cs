@@ -92,8 +92,25 @@ namespace CSMSys.Web.HtmlReports
                 if (lbltotapplied != null)
                     lbltotapplied.Text = (int.Parse((DataBinder.Eval(e.Row.DataItem, "applied")).ToString()) * float.Parse((Request.QueryString["amountBag"]).ToString())).ToString();
                 bagscnt += int.Parse((DataBinder.Eval(e.Row.DataItem, "applied")).ToString());
-                lblsummary.Text = "মোট " + bagscnt + " বস্তা আবেদন করেছে " + (float.Parse((Request.QueryString["amountBag"]).ToString())*bagscnt)+" টাকার জন্য";
+                lblsummary.Text = "মোট " + bagscnt + " বস্তা আবেদন করেছে " +insertComma(float.Parse((Request.QueryString["amountBag"]).ToString())*bagscnt)+" টাকার জন্য";
             }
+        }
+        protected string insertComma(float number)
+        {
+            char[] chars = number.ToString().ToCharArray();
+            Array.Reverse(chars);
+            string res = string.Empty;
+            int count =0;
+            foreach (char chr in chars)
+            {
+               
+                if (count % 3 == 0 && count!= 0) res += ",";
+                res += chr;
+                count++;
+            }
+            char[] charArray = res.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
         protected void grvPreRequisition_bound(object sender, GridViewRowEventArgs e)
         {

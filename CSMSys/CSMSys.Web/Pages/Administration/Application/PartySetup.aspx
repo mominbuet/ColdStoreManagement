@@ -41,6 +41,9 @@ CodeBehind="PartySetup.aspx.cs" Inherits="CSMSys.Web.Pages.INV.PartySetup" %>
                     <h2>
                         <asp:Label ID="lblcustsetup" runat="server" Text="Customer Setup"></asp:Label></h2>
                 </td>
+                <td align="left" valign="bottom" style="width:30%;">
+                    For Agents Only :<asp:CheckBox ID="chkagents" runat="server" AutoPostBack="true" OnCheckedChanged="chkAgentsChanged" />
+                </td>
                 <td align="right" valign="bottom" style="width:44%;">
                     Search by Customer Name/Contact No : <asp:TextBox ID="txtSearch" runat="server" ></asp:TextBox>
                 </td>
